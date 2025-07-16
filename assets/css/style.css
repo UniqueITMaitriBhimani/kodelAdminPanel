@@ -27339,6 +27339,7 @@ p.data-attributes svg {
 .product-box {
   border-radius: 10px;
   overflow: hidden;
+  height: 500px;
 }
 .product-box .product-details {
   padding: 15px 25px;
@@ -27368,7 +27369,7 @@ p.data-attributes svg {
   margin-bottom: 10px;
 }
 .product-box .product-details span {
-  color: #898989;
+  color: #000;
 }
 .product-box .product-details .rating i {
   font-size: 16px;
@@ -27422,6 +27423,11 @@ p.data-attributes svg {
 }
 .product-box .product-img {
   position: relative;
+  height: 400px;
+}
+.product-img img{
+      height: 100%;
+    width: 100%;
 }
 .product-box .product-img .product-hover {
   position: absolute;
