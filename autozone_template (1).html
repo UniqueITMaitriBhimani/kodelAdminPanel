@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoZone Pvt. Ltd - Company Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      min-height: 100vh;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .view-distributor-details-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .view-distributor-details-header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .view-distributor-details-company-logo {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .view-distributor-details-company-tagline {
+      font-size: 1.1em;
+      opacity: 0.9;
+      font-weight: 300;
+    }
+
+    .view-distributor-details-content {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .view-distributor-details-section {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      border: 1px solid #e1e8ed;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .view-distributor-details-section:hover {
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .view-distributor-details-section-title {
+      font-size: 1.3em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #3498db;
+      font-weight: 600;
+    }
+
+    .view-distributor-details-info-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .view-distributor-details-info-item {
+      display: flex;
+      padding: 12px 0;
+      border-bottom: 1px solid #f8f9fa;
+    }
+
+    .view-distributor-details-info-item:last-child {
+      border-bottom: none;
+    }
+
+    .view-distributor-details-info-label {
+      font-weight: 500;
+      color: #555;
+      min-width: 140px;
+      margin-right: 15px;
+    }
+
+    .view-distributor-details-info-value {
+      color: #2c3e50;
+      font-weight: 400;
+      flex: 1;
+    }
+
+    .view-distributor-details-badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .view-distributor-details-badge {
+      background: #3498db;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 0.85em;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .view-distributor-details-badge:hover {
+      background: #2980b9;
+      transform: translateY(-1px);
+    }
+
+    .view-distributor-details-badge.premium {
+      background: #e74c3c;
+    }
+
+    .view-distributor-details-badge.popular {
+      background: #27ae60;
+    }
+
+    .view-distributor-details-badge.new {
+      background: #f39c12;
+    }
+
+    .view-distributor-details-price-section {
+      grid-column: 1 / -1;
+      border: 1px solid #e1e8ed;
+      background: transparent;
+      color: #2c3e50;
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .view-distributor-details-price-title {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .view-distributor-details-price-amount {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #27ae60;
+    }
+
+    .view-distributor-details-price-period {
+      font-size: 1.1em;
+      opacity: 0.9;
+      font-weight: 300;
+    }
+
+    .view-distributor-details-full-width {
+      grid-column: 1 / -1;
+    }
+    .feature-icon {
+    color: #27ae60;
+    font-weight: bold;
+}
+    .view-distributor-details-password-field {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      border-radius: 8px;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 1.1em;
+      color: #856404;
+      letter-spacing: 2px;
+    }
+
+    .view-distributor-details-security-note {
+      font-size: 0.9em;
+      color: #721c24;
+      background: #f8d7da;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      border: 1px solid #f5c6cb;
+    }
+
+    .view-distributor-details-features {
+      margin-top: 15px;
+      font-size: 1em;
+      opacity: 0.9;
+    }
+
+    .view-distributor-details-features span {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .view-distributor-details-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+
+      .view-distributor-details-header {
+        padding: 25px;
+      }
+
+      .view-distributor-details-company-logo {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="view-distributor-details-container">
+    <div class="view-distributor-details-header">
+      <div class="view-distributor-details-company-logo">🚗 AutoZone Pvt. Ltd</div>
+      <div class="view-distributor-details-company-tagline">Your Premier Automotive Solutions Partner</div>
+    </div>
+
+    <div class="view-distributor-details-content">
+      <div class="view-distributor-details-section">
+        <h2 class="view-distributor-details-section-title">Company Information</h2>
+        <div class="view-distributor-details-info-grid">
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Company Name:</span>
+            <span class="view-distributor-details-info-value">AutoZone Pvt. Ltd</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">GST Number:</span>
+            <span class="view-distributor-details-info-value">24ABCDE1234F1Z5</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Registration:</span>
+            <span class="view-distributor-details-info-value">CIN: U74999GJ2020PTC115234</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-distributor-details-section">
+        <h2 class="view-distributor-details-section-title">Contact Person</h2>
+        <div class="view-distributor-details-info-grid">
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Name:</span>
+            <span class="view-distributor-details-info-value">Jay Patel</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Designation:</span>
+            <span class="view-distributor-details-info-value">Managing Director</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Primary Phone:</span>
+            <span class="view-distributor-details-info-value">+91 95869 85695</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Secondary Phone:</span>
+            <span class="view-distributor-details-info-value">+91 96396 39518</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Email:</span>
+            <span class="view-distributor-details-info-value">jaypatel@123.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-distributor-details-section">
+        <h2 class="view-distributor-details-section-title">Address Details</h2>
+        <div class="view-distributor-details-info-grid">
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Address:</span>
+            <span class="view-distributor-details-info-value">Plot No. 45, Sector 8, Industrial Area, Gandhinagar Highway</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">City:</span>
+            <span class="view-distributor-details-info-value">Ahmedabad</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">State:</span>
+            <span class="view-distributor-details-info-value">Gujarat</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Country:</span>
+            <span class="view-distributor-details-info-value">India</span>
+          </div>
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">PIN Code:</span>
+            <span class="view-distributor-details-info-value">382424</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-distributor-details-section">
+        <h2 class="view-distributor-details-section-title">Security Information</h2>
+        <div class="view-distributor-details-info-grid">
+          <div class="view-distributor-details-info-item">
+            <span class="view-distributor-details-info-label">Password:</span>
+            <div class="view-distributor-details-password-field">AutoZone@2024#Secure</div>
+          </div>
+        </div>
+        <div class="view-distributor-details-security-note">
+          🔒 This is a dummy password for template purposes only. Use strong, unique passwords in production.
+        </div>
+      </div>
+
+      <div class="view-distributor-details-section view-distributor-details-full-width">
+        <h2 class="view-distributor-details-section-title">Product & Service Categories</h2>
+        <div class="view-distributor-details-badge-container">
+          <span class="view-distributor-details-badge premium">Premium Auto Parts</span>
+          <span class="view-distributor-details-badge popular">Engine Components</span>
+          <span class="view-distributor-details-badge new">Electric Vehicle Parts</span>
+          <span class="view-distributor-details-badge">Brake Systems</span>
+          <span class="view-distributor-details-badge">Suspension Parts</span>
+          <span class="view-distributor-details-badge">Transmission Components</span>
+          <span class="view-distributor-details-badge">Body Parts</span>
+          <span class="view-distributor-details-badge">Lighting Systems</span>
+          <span class="view-distributor-details-badge">Air Conditioning</span>
+          <span class="view-distributor-details-badge">Fuel Systems</span>
+          <span class="view-distributor-details-badge">Exhaust Systems</span>
+          <span class="view-distributor-details-badge">Steering Components</span>
+          <span class="view-distributor-details-badge">Tires & Wheels</span>
+          <span class="view-distributor-details-badge">Batteries</span>
+          <span class="view-distributor-details-badge">Filters</span>
+          <span class="view-distributor-details-badge">Lubricants</span>
+          <span class="view-distributor-details-badge">Diagnostic Tools</span>
+          <span class="view-distributor-details-badge">Workshop Equipment</span>
+          <span class="view-distributor-details-badge">Safety Equipment</span>
+          <span class="view-distributor-details-badge">Maintenance Services</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-distributor-details-price-section">
+      <div class="view-distributor-details-price-title">Monthly Credit Facility</div>
+      <div class="view-distributor-details-price-amount">₹2,50,000</div>
+      <div class="view-distributor-details-price-period">Per Month Credit Limit</div>
+      <div class="view-distributor-details-features">
+        <span><span class="feature-icon">✓</span> 30-day payment terms</span>
+        <span><span class="feature-icon">✓</span> Flexible credit options</span>
+        <span><span class="feature-icon">✓</span> Volume discounts available</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

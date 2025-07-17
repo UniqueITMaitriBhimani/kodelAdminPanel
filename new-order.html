@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paris admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Paris admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <title>Basic Tables | Paris - Premium Admin Template By Pixelstrap</title>
+    <!-- Google font-->
+    <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/icofont.min.css">
+    <!-- Latest Font Awesome 6 (Free) CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/dev-style.css">
+  </head>
+  <body>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends--> 
+    <!-- loader starts-->
+    <div class="loader-wrapper">
+      <div class="theme-loader"> 
+        <svg width="100" height="100" viewbox="0 0 100 100">
+          <circle class="circle outer" cx="50" cy="50" r="45"></circle>
+          <circle class="circle inner" cx="50" cy="50" r="25"></circle>
+          <circle class="dots" cx="50" cy="5" r="3"></circle>
+          <circle class="dots" cx="95" cy="50" r="3"></circle>
+          <circle class="dots" cx="50" cy="95" r="3"></circle>
+          <circle class="dots" cx="5" cy="50" r="3"></circle>
+        </svg>
+      </div>
+    </div>
+    <!-- loader ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+      <div class="page-header">
+        <div class="header-wrapper row m-0">
+          <form class="form-inline search-full col" action="#" method="get">
+            <div class="form-group w-100">
+              <div class="Typeahead Typeahead--twitterUsers">
+                <div class="u-posRelative">
+                  <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text" placeholder="Search Anything Here..." name="q" title="" autofocus="">
+                  <div class="spinner-border Typeahead-spinner" role="status"><span class="sr-only">Loading...</span></div><i class="close-search" data-feather="x"></i>
+                </div>
+                <div class="Typeahead-menu"></div>
+              </div>
+            </div>
+          </form>
+          <div class="header-logo-wrapper col-auto p-0">
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a></div>
+            <div class="toggle-sidebar">
+              <svg class="status_toggle middle sidebar-toggle">
+                <use href="../assets/svg/icon-sprite.svg#grid"></use>
+              </svg>
+            </div>
+          </div>
+          
+          <div class="nav-right col-lg-4 col-auto pull-right right-header p-0 ms-auto">
+            <ul class="nav-menus">
+              <li>                         <span class="header-search">
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#header-search"></use>
+                  </svg></span></li>
+              <li>
+                <div class="mode">
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#header-bulb"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="cart-nav onhover-dropdown">
+                <div class="cart-box">
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#header-cart"></use>
+                  </svg>
+                </div>
+                <div class="cart-dropdown onhover-show-div">
+                  <h6 class="f-18 mb-0 dropdown-title">Cart</h6>
+                  <ul>
+                    <li>
+                      <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/cart-img.jpg" alt="">
+                        <div class="flex-grow-1"><span>Furniture Chair for Home</span>
+                          <div class="qty-box">
+                            <div class="input-group"><span class="input-group-prepend">
+                                <button class="btn quantity-left-minus" type="button" data-type="minus" data-field="">-</button></span>
+                              <input class="form-control input-number" type="text" name="quantity" value="1"><span class="input-group-prepend">
+                                <button class="btn quantity-right-plus" type="button" data-type="plus" data-field="">+</button></span>
+                            </div>
+                          </div>
+                          <h6>$12.45</h6>
+                        </div>
+                        <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/other-images/cart-img1.jpg" alt="">
+                        <div class="flex-grow-1"><span>Rest Well Chair</span>
+                          <div class="qty-box">
+                            <div class="input-group"><span class="input-group-prepend">
+                                <button class="btn quantity-left-minus" type="button" data-type="minus" data-field="">-</button></span>
+                              <input class="form-control input-number" type="text" name="quantity" value="1"><span class="input-group-prepend">
+                                <button class="btn quantity-right-plus" type="button" data-type="plus" data-field="">+</button></span>
+                            </div>
+                          </div>
+                          <h6>$49.00</h6>
+                        </div>
+                        <div class="close-circle"><a class="bg-danger" href="#"><i data-feather="x"></i></a></div>
+                      </div>
+                    </li>
+                    <li class="total">
+                      <h6 class="mb-0">Order Total : <span class="f-right">$1000.00</span></h6>
+                    </li>
+                    <li class="text-center"><a class="d-block view-cart f-w-700 btn btn-primary w-100" href="cart.html">Add Cart</a><a class="btn btn-primary view-checkout btn btn-primary w-100 f-w-700" href="checkout.html">Checkout</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="onhover-dropdown">
+                <div class="notification-box">
+                  <svg>
+                    <use href="../assets/svg/icon-sprite.svg#header-notification"></use>
+                  </svg><span class="badge rounded-pill badge-success">4 </span>
+                </div>
+                <div class="onhover-show-div notification-dropdown">
+                  <h6 class="f-18 mb-0 dropdown-title">Notifications                               </h6>
+                  <ul>
+                    <li class="b-l-primary border-4 toast default-show-toast align-items-center text-light border-0 fade show" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                      <div class="d-flex justify-content-between">
+                        <div class="toast-body">
+                          <p>Delivery processing</p>
+                        </div>
+                        <button class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                    </li>
+                    <li class="b-l-success border-4 toast default-show-toast align-items-center text-light border-0 fade show" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                      <div class="d-flex justify-content-between">
+                        <div class="toast-body">
+                          <p>Order Complete</p>
+                        </div>
+                        <button class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                    </li>
+                    <li class="b-l-secondary border-4 toast default-show-toast align-items-center text-light border-0 fade show" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                      <div class="d-flex justify-content-between">
+                        <div class="toast-body">
+                          <p>Tickets Generated</p>
+                        </div>
+                        <button class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                    </li>
+                    <li class="b-l-warning border-4 toast default-show-toast align-items-center text-light border-0 fade show" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+                      <div class="d-flex justify-content-between">
+                        <div class="toast-body">
+                          <p>Delivery Complete</p>
+                        </div>
+                        <button class="btn-close btn-close-white me-2 m-auto" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="profile-nav onhover-dropdown pe-0 py-0">
+                <div class="d-flex profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.png" alt=""></div>
+                <ul class="profile-dropdown onhover-show-div">
+                  <li> 
+                    <div class="d-flex profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.png" alt="">
+                      <div class="flex-grow-1"><span>Emay Walter</span>
+                        <p>Emay1@ecme.com</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="sign-up.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#user"></use>
+                      </svg><span>Account </span></a></li>
+                  <li><a href="mail-box.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#mail"></use>
+                      </svg><span>Inbox</span></a></li>
+                  <li><a href="task.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#file"></use>
+                      </svg><span>Taskboard</span></a></li>
+                  <li><a href="add-user.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#knowledgebase"></use>
+                      </svg><span>Settings</span></a></li>
+                  <li><a href="login.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#logout"></use>
+                      </svg><span>Log out</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <script class="result-template" type="text/x-handlebars-template">
+            <div class="ProfileCard u-cf">                        
+            <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
+            <div class="ProfileCard-details">
+            <div class="ProfileCard-realName">{{name}}</div>
+            </div>
+            </div>
+          </script>
+          <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
+        </div>
+      </div>
+      <!-- Page Header Ends                              -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+        <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
+          <div>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
+              <div class="back-btn"><i class="fa-solid fa-angle-left"></i></div>
+              <div class="toggle-sidebar">
+                <svg class="status_toggle middle sidebar-toggle">
+                  <use href="../assets/svg/icon-sprite.svg#grid"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo-icon.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo-icon-dark.png" alt=""></a></div>
+            <nav class="sidebar-main">
+              <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+              <div id="sidebar-menu">
+                <ul class="sidebar-links" id="simple-bar">
+                  <li class="back-btn"><a href="index.html"><img class="img-fluid" src="../assets/images/logo/logo-icon.png" alt=""></a>
+                    <div class="mobile-back text-end"><span>Back</span><i class="fa-solid fa-angle-right ps-2" aria-hidden="true"></i></div>
+                  </li>
+                  <li class="pin-title sidebar-main-title">
+                    <div> 
+                      <h6>Pinned</h6>
+                    </div>
+                  </li>
+                  <li class="sidebar-main-title">
+                    <div>
+                      <h6 class="lan-1">General</h6>
+                    </div>
+                  </li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="#">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#home"></use>
+                      </svg><span>Dashboard</span></a></li>
+                  
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                      <svg> 
+                        <use href="../assets/svg/icon-sprite.svg#widgets"></use>
+                      </svg><span class="lan-6">Item Management</span></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="items-list.html">Item List</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#layout"></use>
+                      </svg><span class="lan-7">Color Management</span></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="Color-List.html">Color List</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"> </i><a class="sidebar-link sidebar-title" href="#">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#project"></use>
+                      </svg><span>Distributor Management</span></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="list-distributor-management.html">Distributor List</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                     <svg>
+                        <use href="../assets/svg/icon-sprite.svg#buy"></use>
+                      </svg><span>Order Management</span></a>
+                    <ul class="sidebar-submenu">
+                      <li><a href="new-order.html">New Order</a></li>
+                      <li><a href="confirm-Order.html">Confirm Order</a></li>
+                      <li><a href="dispatch-order.html">Dispatch Order</a></li>
+                      <li><a href="Padding-order.html">Padding Order</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+            </nav>
+          </div>
+        </div>
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-title">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h3>New Order</h3>
+                </div>
+                <div class="col-sm-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">                                       
+                        <svg class="stroke-icon">
+                          <use href="../assets/svg/icon-sprite.svg#home"></use>
+                        </svg></a></li>
+                    <li class="breadcrumb-item">Order Managemen</li>
+                    <li class="breadcrumb-item active">New Order</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid basic_table">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="table-responsive custom-scrollbar">
+                    <table class="table border-bottom-table">
+                      <thead>
+                        <tr class="border-bottom-primary">
+                          <th scope="col">No</th>
+                          <th scope="col">Order Number</th>
+                          <th scope="col">Distributer</th>
+                          <th scope="col">Item</th>
+                          <th scope="col">Order Date</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>ORD-20250701</td>
+                          <td>AutoZone Pvt. Ltd</td>
+                          <td>ECO SCODA COVENTRY</td>
+                          <td>2025-07-15</td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                              </button>
+                              <ul class="dropdown-menu bg-white shadow">
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                        <i class="fas fa-eye me-2"></i>View
+                                    </a></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                    
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>ORD-20250702</td>
+                          <td>TileMart Exports</td>
+                          <td>VOLVO VISENZA</td>
+                          <td>2025-07-16</td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                              </button>
+                              <ul class="dropdown-menu bg-white shadow">
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                        <i class="fas fa-eye me-2"></i>View
+                                    </a></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                    
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>ORD-20250703</td>
+                          <td>Global Build Ltd</td>
+                          <td>MAGNUM COLLECTION</td>
+                          <td>2025-07-17</td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                              </button>
+                              <ul class="dropdown-menu bg-white shadow">
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                        <i class="fas fa-eye me-2"></i>View
+                                    </a></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>ORD-20250704</td>
+                          <td>Infinity Ceramics</td>
+                          <td>KEROL-ENDURAPLATE</td>
+                          <td>2025-07-17</td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                              </button>
+                              <ul class="dropdown-menu bg-white shadow">
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                        <i class="fas fa-eye me-2"></i>View
+                                    </a></li>
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>ORD-20250705</td>
+                          <td>DecoBuild International</td>
+                          <td>KEROL-AEROMAT</td>
+                          <td>2025-07-17</td>
+                          <td>
+                            <div class="dropdown">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                              </button>
+                              <ul class="dropdown-menu bg-white shadow">
+                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                        <i class="fas fa-eye me-2"></i>View
+                                    </a></li>
+                                <li><a class="dropdown-item text-danger" href="#" ><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid Ends-->
+        </div>
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 footer-copyright text-center">
+                <p class="mb-0 f-w-600">Copyright <span class="year-update"> </span> © Paris Theme By Pixelstrap  </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+<!-- Confirm Order pop -->
+    <div class="modal fade" id="exampleModalgetbootstrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalgetbootstrap" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-toggle-wrapper"> 
+              <h4><strong class="txt-danger">Conform</strong> Order</h4>
+              <div class="modal-img"><img src="../assets/images/gif/online-shopping.gif" alt="online-shopping"></div>
+              <div class="container-fluid basic_table">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="table-responsive custom-scrollbar">
+                    <table class="table border-bottom-table">
+                      <thead>
+                        <tr class="border-bottom-primary">
+                          <th scope="col">No</th>
+                          <th scope="col">Color Number</th>
+                          <th scope="col">Current Order</th>
+                          <th scope="col">Conform Name</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Slate Blue</td>
+                            <td>
+                              <div class="d-flex flex-column">
+                                <span class="badge bg-warning text-dark mb-1"><i class="fas fa-box me-1"></i> ₹ 520 / Roll</span>
+                                <span class="badge bg-info text-dark"><i class="fas fa-ruler-combined me-1"></i> ₹ 52 / Mtr</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="badge bg-primary me-2">Roll: 12</span>
+                              <span class="badge bg-success">Mtr: 150</span>
+                            </td>
+                          </tr>                         
+
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Rose Taupe</td>
+                            <td>
+                              <div class="d-flex flex-column">
+                                <span class="badge bg-warning text-dark mb-1"><i class="fas fa-box me-1"></i> ₹ 480 / Roll</span>
+                                <span class="badge bg-info text-dark"><i class="fas fa-ruler-combined me-1"></i> ₹ 48 / Mtr</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="badge bg-primary me-2">Roll: 8</span>
+                              <span class="badge bg-success">Mtr: 95</span>
+                            </td>
+                          </tr>                         
+
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Beige Sandstone</td>
+                            <td>
+                              <div class="d-flex flex-column">
+                                <span class="badge bg-warning text-dark mb-1"><i class="fas fa-box me-1"></i> ₹ 500 / Roll</span>
+                                <span class="badge bg-info text-dark"><i class="fas fa-ruler-combined me-1"></i> ₹ 50 / Mtr</span>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="badge bg-primary me-2">Roll: 15</span>
+                              <span class="badge bg-success">Mtr: 180</span>
+                            </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+              <button class="btn bg-primary d-flex align-items-center gap-2 text-light ms-auto" type="button" data-bs-dismiss="modal">Save<i data-feather="arrow-right"></i></button>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="../assets/js/scrollbar/simplebar.min.js"></script>
+    <script src="../assets/js/scrollbar/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="../assets/js/config.js"></script>
+    <!-- Plugins JS start-->
+    <script src="../assets/js/sidebar-menu.js"></script>
+    <script src="../assets/js/sidebar-pin.js"></script>
+    <script src="../assets/js/slick/slick.min.js"></script>
+    <script src="../assets/js/slick/slick.js"></script>
+    <script src="../assets/js/header-slick.js"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script1.js"></script>
+    <script src="../assets/js/theme-customizer/customizer.js"></script>
+  </body>
+</html>

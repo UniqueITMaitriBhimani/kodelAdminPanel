@@ -13690,8 +13690,9 @@ btn-group .dropdown-wrapper .input-group .input-group-text {
 .horizontal-login .show-pass {
   position: absolute;
   transform: translate(50%, -50%);
-  top: 2.75rem;
-  right: 20px;
+       top: 3.85rem;
+    right: 39px;
+
 }
 [dir=rtl] .horizontal-login .show-pass {
   right: unset;
@@ -27339,7 +27340,10 @@ p.data-attributes svg {
 .product-box {
   border-radius: 10px;
   overflow: hidden;
-  height: 500px;
+  height: 300px;
+}
+.product-box-height{
+  height: 260px !important;
 }
 .product-box .product-details {
   padding: 15px 25px;
@@ -27423,7 +27427,7 @@ p.data-attributes svg {
 }
 .product-box .product-img {
   position: relative;
-  height: 400px;
+  height: 200px;
 }
 .product-img img{
       height: 100%;

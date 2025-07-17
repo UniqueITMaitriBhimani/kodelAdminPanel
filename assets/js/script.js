@@ -300,11 +300,11 @@
       ae: "ÙˆØ¥ÙØªØ±Ø§Ø¶ÙŠ",
     },
     {
-      en: "Ecommerce",
+      en: "Order Management",
       pt: "ComÃ©rcio eletrÃ´nico",
       es: "Komerco",
       fr: "Commerce Ã©lectronique",
-      de: "E-commerce",
+      de: "Order Management",
       cn: "é›»å­å•†å‹™",
       ae: "ÙˆØ§Ù„ØªØ¬Ø§Ø±Ø© Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØ©",
     },
@@ -326,24 +326,7 @@
       cn: "é é¢ä½ˆå±€",
       ae: "ÙˆØªØ®Ø·ÙŠØ· Ø§Ù„ØµÙØ­Ø©",
     },
-    {
-      en: "Applications",
-      pt: "FormulÃ¡rios",
-      es: "Aplikoj",
-      fr: "Applications",
-      de: "Toepassingen",
-      cn: "æ‡‰ç”¨é ˜åŸŸ",
-      ae: "ÙˆØ§Ù„ØªØ·Ø¨ÙŠÙ‚Ø§Øª",
-    },
-    {
-      en: "Ready to use Apps",
-      pt: "Pronto para usar aplicativos",
-      es: "Preta uzi Apps",
-      fr: " Applications prÃªtes Ã  lemploi ",
-      de: "Klaar om apps te gebruiken",
-      cn: "ä»ªè¡¨æ¿",
-      ae: "Ø¬Ø§Ù‡Ø² Ù„Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø§Ù„ØªØ·Ø¨ÙŠÙ‚Ø§Øª",
-    },
+
   ];
 
   $(".mobile-title svg").click(function () {
