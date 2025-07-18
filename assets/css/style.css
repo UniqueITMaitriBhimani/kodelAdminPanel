@@ -27372,9 +27372,9 @@ p.data-attributes svg {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.product-box .product-details span {
+/* .product-box .product-details span {
   color: #000;
-}
+} */
 .product-box .product-details .rating i {
   font-size: 16px;
   letter-spacing: 3px;

@@ -191,22 +191,12 @@
                         <use href="./assets/svg/icon-sprite.svg#home"></use>
                       </svg><span>Dashboard</span></a></li>
                   
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="items-list.html">
                       <svg> 
                         <use href="./assets/svg/icon-sprite.svg#widgets"></use>
                       </svg><span class="lan-6">Item Management</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="items-list.html">Item List</a></li>
-                    </ul>
                   </li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
-                      <svg>
-                        <use href="./assets/svg/icon-sprite.svg#layout"></use>
-                      </svg><span class="lan-7">Color Management</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="Color-List.html">Color List</a></li>
-                    </ul>
-                  </li>
+                  
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"> </i><a class="sidebar-link sidebar-title" href="#">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#project"></use>
@@ -222,9 +212,9 @@
                     <ul class="sidebar-submenu">
                       <li><a href="new-order.html">New Order</a></li>
                       <li><a href="confirm-Order.html">Confirm Order</a></li>
+                      <li><a href="Padding-order.html">Pending Order</a></li>
                      <li><a href="dispatch-order.html">Dispatch Order</a></li>
                       <li><a href="delivered-order.html">Delivered Order</a></li>
-                      <li><a href="Padding-order.html">Pending Order</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -373,11 +363,11 @@
     </div>
 
  <!-- view model open -->
-    <div class="modal fade" id="viewOrderModal" tabindex="-1" aria-labelledby="viewOrderModalLabel" aria-hidden="true">
+  <div class="modal fade" id="viewOrderModal" tabindex="-1" aria-labelledby="viewOrderModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="view-distributor-price-modal-content">
                 <div class="view-distributor-price-modal-header">
-                    <h5 class="view-distributor-price-modal-title" id="viewOrderModalLabel">
+                    <h5 class="view-distributor-price-modal-title text-white" id="viewOrderModalLabel">
                         <i class="fas fa-receipt me-2"></i>Order Details
                     </h5>
                     <button type="button" class="view-distributor-price-btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
@@ -386,12 +376,8 @@
                 <div class="view-distributor-price-modal-body">
                     <div class="row">
                         <!-- Left: Order Info -->
-                        <div class="col-lg-7 mb-4">
+                        <div class="col-lg-7 ">
                             <div class="view-distributor-price-order-summary-card">
-                                <div class="view-distributor-price-section-title">
-                                    <i class="fas fa-file-alt"></i>
-                                    Order Summary
-                                </div>
                                 
                                 <div class="view-distributor-info-grid">
                                     <div class="view-distributor-price-info-grid">
@@ -427,7 +413,7 @@
                         </div>
                         
                         <!-- Right: Product Image -->
-                        <div class="col-lg-5 mb-4">
+                        <div class="col-lg-5">
                             <div class="view-distributor-price-product-image-container">
                                 <img src="./assets/images/kodel-product/ECOSCODACOVENTRY.jpg" 
                                      class="product-image" alt="Product Image">
@@ -499,38 +485,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="col-md-12">
-                <div class="card height-equal">
-                  <div class="card-body">
-                    <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                           <div class="btn-group">
-                        <button class="btn btn-primary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">10</button>
-                        <ul class="dropdown-menu dropdown-block" style="">
-                          <li><a class="dropdown-item" href="#!">10</a></li>
-                          <li><a class="dropdown-item" href="#!">20</a></li>
-                          <li><a class="dropdown-item" href="#!">50</a></li>
-                        </ul>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                      <nav aria-label="Page navigation example">
-                      <ul class="pagination pagination-dark pagin-border-dark gap-2">
-                        <li class="page-item"><a class="page-link rounded-circle" href="#!" aria-label="Previous"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
-                        <li class="page-item"><a class="page-link rounded-circle" href="#!">1</a></li>
-                        <li class="page-item"><a class="page-link rounded-circle" href="#!">2</a></li>
-                        <li class="page-item"><a class="page-link rounded-circle" href="#!">...</a></li>
-                        <li class="page-item"><a class="page-link rounded-circle" href="#!">20</a></li>
-                        <li class="page-item"><a class="page-link rounded-circle" href="#!" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
-                      </ul>
-                    </nav>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
                         </div>
                     </div>
                 </div>

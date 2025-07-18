@@ -151,22 +151,12 @@
                         <use href="./assets/svg/icon-sprite.svg#home"></use>
                       </svg><span>Dashboard</span></a></li>
                   
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="items-list.html">
                       <svg> 
                         <use href="./assets/svg/icon-sprite.svg#widgets"></use>
                       </svg><span class="lan-6">Item Management</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="items-list.html">Item List</a></li>
-                    </ul>
                   </li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
-                      <svg>
-                        <use href="./assets/svg/icon-sprite.svg#layout"></use>
-                      </svg><span class="lan-7">Color Management</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="Color-List.html">Color List</a></li>
-                    </ul>
-                  </li>
+                  
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"> </i><a class="sidebar-link sidebar-title" href="#">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#project"></use>
@@ -182,9 +172,9 @@
                     <ul class="sidebar-submenu">
                       <li><a href="new-order.html">New Order</a></li>
                       <li><a href="confirm-Order.html">Confirm Order</a></li>
+                      <li><a href="Padding-order.html">Pending Order</a></li>
                      <li><a href="dispatch-order.html">Dispatch Order</a></li>
                       <li><a href="delivered-order.html">Delivered Order</a></li>
-                      <li><a href="Padding-order.html">Pending Order</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
@@ -209,7 +199,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Color List</h3>
+                  <h3>Color Options for Eco Scoda Coventry</h3>
                 </div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb">
@@ -228,7 +218,11 @@
           <div class="container-fluid basic_table">
             <div class="row">
                 <div class="feature-products">
-                <div class="common-f-start justify-content-md-end mb-3"><a class="btn btn-primary f-w-500" href="add-Color.html"><i class="fa fa-plus pe-2"></i>Add Color</a></div>
+                <div class="common-f-start justify-content-md-end mb-3"><div class="job-filter me-2">
+                    <div class="faq-form">
+                      <input class="form-control" type="text" placeholder="Search.."><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                  </div><a class="btn btn-outline-primary f-w-500" href="add-Color.html"><i class="fa fa-plus pe-2"></i>Add Color</a></div>
               </div>
               <div class="col-sm-12">
                 <div class="card">
@@ -242,7 +236,7 @@
                           <th scope="col">Sequence</th>
                           <th scope="col">Serial No</th>
                           <th scope="col">Price</th>
-                          <th scope="col">Row <br> Box</th>
+                          <th scope="col">Location</th>
                           <th scope="col">Stock</th>
                           <th scope="col">Action</th>
                         </tr>
@@ -258,8 +252,8 @@
                            <!-- Price -->
                            <td>
                              <div class="d-flex flex-column">
-                               <span class="badge bg-secondary">₹100 <small>/ Roll</small></span>
-                               <span class="badge bg-info text-dark mt-1 ms-0">₹70 <small>/ Meter</small></span>
+                               <span class="badge btn-outline-dark">₹100 <small>/ Roll</small></span>
+                               <span class="badge btn-outline-dark mt-1 ms-0">₹70 <small>/ Meter</small></span>
                              </div>
                            </td>
                        
@@ -279,8 +273,8 @@
                        
                            <!-- Actions -->
                            <td>
-                             <button class="btn btn-sm btn-outline-primary">Edit</button>
-                             <button class="btn btn-sm btn-outline-danger">Delete</button>
+                             <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
+                             <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash text-danger"></i></button>
                            </td>
                          </tr>
                      
@@ -294,8 +288,8 @@
                            <!-- Price -->
                            <td>
                              <div class="d-flex flex-column">
-                               <span class="badge bg-secondary">₹90 <small>/ Roll</small></span>
-                               <span class="badge bg-info text-dark mt-1 ms-0">₹60 <small>/ Meter</small></span>
+                               <span class="badge btn-outline-dark">₹90 <small>/ Roll</small></span>
+                               <span class="badge btn-outline-dark mt-1 ms-0">₹60 <small>/ Meter</small></span>
                              </div>
                            </td>
                        
@@ -315,8 +309,8 @@
                        
                            <!-- Actions -->
                            <td>
-                             <button class="btn btn-sm btn-outline-primary">Edit</button>
-                             <button class="btn btn-sm btn-outline-danger">Delete</button>
+                             <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
+                             <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash text-danger"></i></button>
                            </td>
                          </tr>
                      
@@ -330,8 +324,8 @@
                            <!-- Price -->
                            <td>
                              <div class="d-flex flex-column">
-                               <span class="badge bg-secondary">₹110 <small>/ Roll</small></span>
-                               <span class="badge bg-info text-dark mt-1 ms-0">₹75 <small>/ Meter</small></span>
+                               <span class="badge btn-outline-dark">₹110 <small>/ Roll</small></span>
+                               <span class="badge btn-outline-dark mt-1 ms-0">₹75 <small>/ Meter</small></span>
                              </div>
                            </td>
                        
@@ -351,8 +345,8 @@
                        
                            <!-- Actions -->
                            <td>
-                             <button class="btn btn-sm btn-outline-primary">Edit</button>
-                             <button class="btn btn-sm btn-outline-danger">Delete</button>
+                             <button class="btn btn-sm btn-outline-primary"><i class="fas fa-eye"></i></button>
+                             <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash text-danger"></i></button>
                            </td>
                          </tr>
                       </tbody>
