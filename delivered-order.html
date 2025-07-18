@@ -39,6 +39,46 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/dev-style.css">
+
+
+
+        <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/icofont.min.css">
+    <!-- Latest Font Awesome 6 (Free) CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/icofont.min.css">
+    <!-- Latest Font Awesome 6 (Free) CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome.css">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/icofont.css">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/themify.css">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/flag-icon.css">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/feather-icon.css">
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/select.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/vector-map1/jsvectormap.min.css">
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link id="color" rel="stylesheet" href="./assets/css/color-1.css" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/dev-style.css">
   </head>
   <body>
     <!-- tap on top starts-->
@@ -263,7 +303,7 @@
                       <h6 class="lan-1">General</h6>
                     </div>
                   </li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="index.html">
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="#">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#home"></use>
                       </svg><span>Dashboard</span></a></li>
@@ -299,7 +339,7 @@
                     <ul class="sidebar-submenu">
                       <li><a href="new-order.html">New Order</a></li>
                       <li><a href="confirm-Order.html">Confirm Order</a></li>
-                     <li><a href="dispatch-order.html">Dispatch Order</a></li>
+                      <li><a href="dispatch-order.html">Dispatch Order</a></li>
                       <li><a href="delivered-order.html">Delivered Order</a></li>
                       <li><a href="Padding-order.html">Pending Order</a></li>
                     </ul>
@@ -324,7 +364,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Color List</h3>
+                  <h3>Delivered</h3>
                 </div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb">
@@ -332,146 +372,63 @@
                         <svg class="stroke-icon">
                           <use href="./assets/svg/icon-sprite.svg#home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Color Management</li>
-                    <li class="breadcrumb-item active">Color List</li>
+                    <li class="breadcrumb-item">Order Managemen</li>
+                    <li class="breadcrumb-item active">Delivered</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid basic_table">
+           <div class="container-fluid basic_table">
             <div class="row">
-                <div class="feature-products">
-                <div class="common-f-start justify-content-md-end mb-3"><a class="btn btn-primary f-w-500" href="add-Color.html"><i class="fa fa-plus pe-2"></i>Add Color</a></div>
-              </div>
-              <div class="col-sm-12">
+              <div class="col-xl-12 col-lg-7 box-col-6">
                 <div class="card">
-                  <div class="table-responsive custom-scrollbar">
-                    <table class="table border-bottom-table">
-                      <thead>
-                        <tr class="border-bottom-primary">
-                          <th scope="col">No</th>
-                          <th scope="col">Color Name</th>
-                          <th scope="col">Color Image</th>
-                          <th scope="col">Sequence</th>
-                          <th scope="col">Serial No</th>
-                          <th scope="col">Price</th>
-                          <th scope="col">Row <br> Box</th>
-                          <th scope="col">Stock</th>
-                          <th scope="col">Action</th>
+                  <div class="card-body px-0 py-0 ">
+                    <div class="table-responsive custom-scrollbar"> 
+                      <table class="table" id="main-recent-order">
+                        <thead> 
+                          <tr>
+                            <th></th>
+                            <th>No</th>
+                             <th>Order Number</th>
+                             <th>Distributer</th>
+                             <th>Item</th>
+                             <th>Delivered Date</th>
+                             <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                          <td></td>
+                          <td>1</td>
+                          <td>ORD-10525</td>
+                          <td>Orbit Tiles Pvt. Ltd.</td>
+                          <td>EVERGREEN LEATHER</td>
+                          <td>16/07/2025</td>
+                          <td>
+                           
+                             <a class="btn btn-sm btn-outline-primary me-1" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                <i class="fas fa-eye"></i>
+                             </a>
+                          </td>
                         </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                           <th scope="row">1</th>
-                           <td>Rose Taupe</td>
-                           <td><img src="/assets/images/color-leather/RoseTaupe.png" alt="Black Carbon" width="100" class="img-thumbnail"></td>
-                           <td>1</td>
-                           <td>LCB001</td>
-                                                
-                           <!-- Price -->
-                           <td>
-                             <div class="d-flex flex-column">
-                               <span class="badge bg-secondary">₹100 <small>/ Roll</small></span>
-                               <span class="badge bg-info text-dark mt-1 ms-0">₹70 <small>/ Meter</small></span>
-                             </div>
-                           </td>
-                       
-                           <!-- Row / Box -->
-                           <td>
-                             <div class="text-nowrap">
-                               <span class="text-muted">Row:</span> <strong>A</strong><br>
-                               <span class="text-muted">Box:</span> <strong>1</strong>
-                             </div>
-                           </td>
-                       
-                           <!-- Stock -->
-                           <td>
-                             <div class="text-success fw-semibold">25 Rolls</div>
-                             <div class="text-success fw-semibold">30 Meters</div>
-                           </td>
-                       
-                           <!-- Actions -->
-                           <td>
-                             <button class="btn btn-sm btn-outline-primary">Edit</button>
-                             <button class="btn btn-sm btn-outline-danger">Delete</button>
-                           </td>
-                         </tr>
-                     
-                         <tr>
-                           <th scope="row">2</th>
-                           <td>Beige Sandstone</td>
-                           <td><img src="/assets/images/color-leather/BeigeSandstone.jpg" alt="Tan Premium" width="100" class="img-thumbnail"></td>
-                           <td>2</td>
-                           <td>LTP002</td>
-                        
-                           <!-- Price -->
-                           <td>
-                             <div class="d-flex flex-column">
-                               <span class="badge bg-secondary">₹90 <small>/ Roll</small></span>
-                               <span class="badge bg-info text-dark mt-1 ms-0">₹60 <small>/ Meter</small></span>
-                             </div>
-                           </td>
-                       
-                           <!-- Row / Box -->
-                           <td>
-                             <div class="text-nowrap">
-                               <span class="text-muted">Row:</span> <strong>B</strong><br>
-                               <span class="text-muted">Box:</span> <strong>3</strong>
-                             </div>
-                           </td>
-                       
-                           <!-- Stock -->
-                           <td>
-                             <div class="text-warning fw-semibold">15 Rolls</div>
-                             <div class="text-warning fw-semibold">20 Meters</div>
-                           </td>
-                       
-                           <!-- Actions -->
-                           <td>
-                             <button class="btn btn-sm btn-outline-primary">Edit</button>
-                             <button class="btn btn-sm btn-outline-danger">Delete</button>
-                           </td>
-                         </tr>
-                     
-                         <tr>
-                           <th scope="row">3</th>
-                           <td>Graphite Grey</td>
-                           <td><img src="/assets/images/color-leather/GraphiteGrey.jpg" alt="Beige Classic" width="100" class="img-thumbnail"></td>
-                           <td>3</td>
-                           <td>LBC003</td>
-                        
-                           <!-- Price -->
-                           <td>
-                             <div class="d-flex flex-column">
-                               <span class="badge bg-secondary">₹110 <small>/ Roll</small></span>
-                               <span class="badge bg-info text-dark mt-1 ms-0">₹75 <small>/ Meter</small></span>
-                             </div>
-                           </td>
-                       
-                           <!-- Row / Box -->
-                           <td>
-                             <div class="text-nowrap">
-                               <span class="text-muted">Row:</span> <strong>C</strong><br>
-                               <span class="text-muted">Box:</span> <strong>2</strong>
-                             </div>
-                           </td>
-                       
-                           <!-- Stock -->
-                           <td>
-                             <div class="text-danger fw-semibold">0 Rolls</div>
-                             <div class="text-success fw-semibold">10 Meters</div>
-                           </td>
-                       
-                           <!-- Actions -->
-                           <td>
-                             <button class="btn btn-sm btn-outline-primary">Edit</button>
-                             <button class="btn btn-sm btn-outline-danger">Delete</button>
-                           </td>
-                         </tr>
-                      </tbody>
-                    </table>
+                          <tr>
+                          <td></td>
+                          <td>2</td>
+                          <td>ORD-10525</td>
+                          <td>Orbit Tiles Pvt. Ltd.</td>
+                          <td>ECO SCODA COVENTRY</td>
+                          <td>16/07/2025</td>
+                          <td>
+                              <a class="btn btn-sm btn-outline-primary me-1" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                <i class="fas fa-eye"></i>
+                             </a>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -491,6 +448,170 @@
         </footer>
       </div>
     </div>
+
+ <!-- view model open -->
+    <div class="modal fade" id="viewOrderModal" tabindex="-1" aria-labelledby="viewOrderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="view-distributor-price-modal-content">
+                <div class="view-distributor-price-modal-header">
+                    <h5 class="view-distributor-price-modal-title" id="viewOrderModalLabel">
+                        <i class="fas fa-receipt me-2"></i>Order Details
+                    </h5>
+                    <button type="button" class="view-distributor-price-btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                
+                <div class="view-distributor-price-modal-body">
+                    <div class="row">
+                        <!-- Left: Order Info -->
+                        <div class="col-lg-7 mb-4">
+                            <div class="view-distributor-price-order-summary-card">
+                                <div class="view-distributor-price-section-title">
+                                    <i class="fas fa-file-alt"></i>
+                                    Order Summary
+                                </div>
+                                
+                                <div class="view-distributor-info-grid">
+                                    <div class="view-distributor-price-info-grid">
+                                        <div class="view-distributor-price-info-label">Order Number</div>
+                                        <div class="view-distributor-price-info-value">#ORD-20250704</div>
+                                    </div>
+                                    <div class="view-distributor-price-info-grid">
+                                        <div class="view-distributor-price-info-label">Distributor</div>
+                                        <div class="view-distributor-price-info-value">Infinity Ceramics</div>
+                                    </div>
+                                    <div class="view-distributor-price-info-grid">
+                                        <div class="view-distributor-price-info-label">Product Item</div>
+                                        <div class="view-distributor-price-info-value">KEROL-ENDURAPLATE</div>
+                                    </div>
+                                    <div class="view-distributor-price-info-grid">
+                                        <div class="view-distributor-price-info-label">Order Date</div>
+                                        <div class="view-distributor-price-info-value">July 17, 2025</div>
+                                    </div>
+                                    <div class="view-distributor-price-info-grid">
+                                        <div class="view-distributor-price-info-label">Status</div>
+                                        <div class="view-distributor-price-info-value">
+                                            <span class="view-distributor-price-status-badge">
+                                                <i class="fas fa-check-circle me-1"></i>Confirmed
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="view-distributor-price-info-grid">
+                                        <div class="view-distributor-price-info-label">Total Amount</div>
+                                        <div class="view-distributor-price-info-value">₹45,750</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right: Product Image -->
+                        <div class="col-lg-5 mb-4">
+                            <div class="view-distributor-price-product-image-container">
+                                <img src="./assets/images/kodel-product/ECOSCODACOVENTRY.jpg" 
+                                     class="product-image" alt="Product Image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Order Details Table -->
+                    <div class="view-distributor-price-product-order-table-container">
+                        <div class="view-distributor-price-product-order-table-header">
+                            <i class="fas fa-list me-2"></i>Order Line Items
+                        </div>
+                        <div class="view-distributor-order-table-responsive view-distributor-order-custom-scrollbar">
+                            <table class="table view-distributor-custom-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Color Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Total Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="view-distributor-row-number">1</div>
+                                        </td>
+                                        <td>Graphite Grey</td>
+                                        <td class="view-distributor-price-cell">₹150</td>
+                                        <td><span class="view-distributor-quantity-cell">50</span></td>
+                                        <td class="view-distributor-total-cell">₹7,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="view-distributor-row-number">2</div>
+                                        </td>
+                                        <td>Mocha Brown</td>
+                                        <td class="view-distributor-price-cell">₹175</td>
+                                        <td><span class="view-distributor-quantity-cell">30</span></td>
+                                        <td class="view-distributor-total-cell">₹5,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="view-distributor-row-number">3</div>
+                                        </td>
+                                        <td>Slate Blue</td>
+                                        <td class="view-distributor-price-cell">₹200</td>
+                                        <td><span class="view-distributor-quantity-cell">75</span></td>
+                                        <td class="view-distributor-total-cell">₹15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="view-distributor-row-number">4</div>
+                                        </td>
+                                        <td>Beige Sandstone</td>
+                                        <td class="view-distributor-price-cell">₹180</td>
+                                        <td><span class="view-distributor-quantity-cell">40</span></td>
+                                        <td class="view-distributor-total-cell">₹7,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="view-distributor-row-number">5</div>
+                                        </td>
+                                        <td>Rose Taupe</td>
+                                        <td class="view-distributor-price-cell">₹220</td>
+                                        <td><span class="view-distributor-quantity-cell">50</span></td>
+                                        <td class="view-distributor-total-cell">₹11,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </div>
+</div>
+
+ <div class="modal fade" id="exampleModallogin" tabindex="-1" role="dialog" aria-labelledby="exampleModallogin" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-body social-profile text-start dark-sign-up">
+             <div class="modal-toggle-wrapper">
+               <h3>Dispatch</h3>
+               <form class="row g-3 mt-3">
+                <div class="col-md-12 position-relative">
+                        <select class="form-select border-dark" id="validationTooltip04" required="">
+                          <option selected="" disabled="" value="">Select Carriers..</option>
+                          <option>U.S </option>
+                          <option>Thailand </option>
+                          <option>India </option>
+                          <option>U.K</option>
+                        </select>
+                        <div class="invalid-tooltip">Please select a valid state.</div>
+                      </div>
+                 <div class="col-md-12">
+                   <textarea name="" id="" placeholder="description" class="w-100 border-dark"></textarea>
+                 </div>
+                 <div class="col-12 d-flex justify-content-center">
+                   <button class="btn btn-primary" type="submit" data-bs-dismiss="modal">Save </button>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
     <!-- latest jquery-->
     <script src="./assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
@@ -514,5 +635,8 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
+    <script src="./assets/js/datatable/datatables/dataTables.js"></script>
+    <script src="./assets/js/datatable/datatables/dataTables.select.js"></script>
+    <script src="./assets/js/datatable/datatables/datatable.custom.js"></script>
   </body>
-</html>
+</html> 

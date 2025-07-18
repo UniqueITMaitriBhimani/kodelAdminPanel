@@ -40,11 +40,6 @@
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/dev-style.css">
-
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/tagify.css">
-    <!-- Plugins css Ends-->
-    
   </head>
   <body> 
     <!-- loader starts-->
@@ -252,7 +247,7 @@
               </div>
             </div>
             <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo-icon.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo-icon-dark.png" alt=""></a></div>
-             <nav class="sidebar-main">
+            <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
@@ -330,7 +325,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Add Distributor</h3>
+                  <h3>Vendor Management</h3>
                 </div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb">
@@ -338,8 +333,8 @@
                         <svg class="stroke-icon">
                           <use href="../assets/svg/icon-sprite.svg#home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Distributor Management</li>
-                    <li class="breadcrumb-item active"> Add Distributor</li>
+                    <li class="breadcrumb-item"> Billing Moduale</li>
+                    <li class="breadcrumb-item active"> Vendor Management</li>
                   </ol>
                 </div>
               </div>
@@ -350,131 +345,70 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="card">
+                  <div class="card-header">
+                    <h5>Color Details</h5>
+                  </div>
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipCompanyname">Company Name</label>
-                        <input class="form-control" id="validationTooltipCompanyname" type="text" required="">
+                        <label class="form-label" for="validationTooltipVendername">Vender Name</label>
+                        <input class="form-control" id="validationTooltipVendername" type="text" required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipUserName">User Name</label>
-                        <input class="form-control" id="validationTooltipUserName" type="text" required="">
+                        <label class="form-label" for="validationTooltipEmail">Email</label>
+                        <input class="form-control" id="validationTooltipEmail" type="emai" required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipContactNumber1">Contact Number 1</label>
-                        <input class="form-control" id="validationTooltipContactNumber1" type="Number" required="">
+                        <label class="form-label" for="validationTooltipContactNumber">Contact Number</label>
+                        <input class="form-control" id="validationTooltipContactNumber" type="Number"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipContactNumber">Contact Number 2</label>
-                        <input class="form-control" id="validationTooltipContactNumber" type="Number" required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipContactEmail">Email</label>
-                        <input class="form-control" id="validationTooltipContactEmail" type="Email" required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipcgst">GST Number</label>
-                        <input class="form-control" id="validationTooltipcgst" type="number"  required="">
+                        <label class="form-label" for="validationTooltipGSTNumber">GST Number</label>
+                        <input class="form-control" id="validationTooltipGSTNumber" type="text"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                       <div class="col-md-12 position-relative">
-                        <label class="form-label" for="validationTooltipContactAdress">Address</label>
-                        <input class="form-control" id="validationTooltipContactAdress" type="text" required="">
+                        <label class="form-label" for="validationTooltipAddress">Address</label>
+                        <input class="form-control" id="validationTooltipAddress" type="text"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipcountry ">country </label>
-                        <select class="form-select" id="validationTooltipcountry " required="">
-                          <option selected="" disabled="" value="">Choose...</option>
-                          <option>U.S </option>
-                          <option>Thailand </option>
-                          <option>India </option>
-                          <option>U.K</option>
-                        </select>
-                        <div class="invalid-tooltip">Please select a valid state.</div>
+                        <label class="form-label" for="validationTooltipCountry">Country</label>
+                        <input class="form-control" id="validationTooltipCountry" type="text" required="">
+                        <div class="invalid-tooltip">Please provide a valid Country.</div>
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipstate ">State </label>
-                        <select class="form-select" id="validationTooltipstate " required="">
-                          <option selected="" disabled="" value="">Choose...</option>
-                          <option>California</option>
-                          <option>Texas</option>
-                          <option>Bangkok</option>
-                          <option>Chiang Mai</option>
-                          <option>Gujarat</option>
-                          <option>Maharashtra</option>
-                          <option>England</option>
-                          <option>Scotland</option>
-                        </select>
-                        <div class="invalid-tooltip">Please select a valid state.</div>
+                        <label class="form-label" for="validationTooltipState">State</label>
+                        <input class="form-control" id="validationTooltipState" type="text" required="">
+                        <div class="invalid-tooltip">Please provide a valid State.</div>
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipcity ">City </label>
-                        <select class="form-select" id="validationTooltipcity " required="">
-                          <option selected="" disabled="" value="">Choose...</option>
-                          <option>Ahmedabad</option>
-                          <option>Rajkot</option>
-                          <option>Surat</option>
-
-                        </select>
-                        <div class="invalid-tooltip">Please select a valid state.</div>
+                        <label class="form-label" for="validationTooltipCity">City</label>
+                        <input class="form-control" id="validationTooltipCity" type="text" required="">
+                        <div class="invalid-tooltip">Please provide a valid City.</div>
                       </div>
-                      <div class="col-md-6">
-                        <label class="form-label" for="validationCustom05">Zip</label>
-                        <input class="form-control" id="validationCustom05" type="text" required="">
-                        <div class="invalid-feedback">Please provide a valid zip.</div>
-                        <div class="valid-feedback">
-                           Looks's Good!</div>
-                      </div>    
-                      <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="horizontal-login">
-                      <form class="needs-validation custom-input" id="horizontal-login" novalidate="">
-                        <div class="mb-3">
-                          <label class="form-label" for="validatepwd">Password</label>
-                          <input class="form-control" id="validatepwd" type="password" placeholder="Enter your password" required="">
-                          <div class="invalid-feedback">Please provide a valid password.</div><span class="show-pass" onclick="toggle()"><i class="fa-regular fa-eye" onclick="myFunction(this)"></i></span>
-                          <div class="progress">
-                            <div class="progress-bar" id="password-strength" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:0%"></div>
-                          </div>
-                          <ul class="pwd-strength">
-                            <li><span class="low-upper-case"><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;Lowercase &amp; Uppercase</span></li>
-                            <li><span class="one-number"><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;Number (0-9)</span></li>
-                            <li><span class="one-special-char"><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;Special Character (!@#$%^&amp;*)</span></li>
-                            <li><span class="eight-character"><i class="fas fa-circle" aria-hidden="true"></i>&nbsp;Atleast 8 Character</span></li>
-                          </ul>
-                        </div>
-                      </form>
-                    </div>
+                      <div class="col-md-6 position-relative">
+                        <label class="form-label" for="validationTooltipPincode">Pincode</label>
+                        <input class="form-control" id="validationTooltipPincode" type="number" required="">
+                        <div class="invalid-tooltip">Please provide a valid Pincode.</div>
+                      </div>
+                      <div class="col-md-12 position-relative">
+                        <label class="form-label" for="validationTooltipBack Details">Back Details</label>
+                        <input class="form-control" id="validationTooltipBack Details" type="text" required="">
+                        <div class="invalid-tooltip">Please provide a valid Back Details.</div>
+                      </div>
+                      <div class="col-md-12 position-relative">
+                        <label class="form-label" for="validationTooltipDescription">Description</label>
+                        <textarea name="" id="validationTooltipDescription" class="w-100 border-light-subtle rounded"></textarea>
+                        <div class="invalid-tooltip">Looks good!</div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12"> 
-                  <div class="card"> 
-                    <div class="card-header"> 
-                      <h5>Items</h5>
-                    </div>
-                    <div class="card-body"> 
-                      <form>
-                        <input class="some_class_name" name="input-custom-dropdown" placeholder="write some tags" value="SAAKA NAPPA, VOLVO VISENZA, NEXA LEATHER">
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                    </form>
-                    <div class="text-center d-flex justify-content-center">
-                        <button class="btn btn-primary " type="submit">Submit</button>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>  
             </div>
           </div>
           <!-- Container-fluid Ends-->
@@ -518,13 +452,5 @@
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/script1.js"></script>
     <script src="../assets/js/theme-customizer/customizer.js"></script>
-
-    <script src="../assets/js/select2/tagify.js"></script>
-    <script src="../assets/js/select2/tagify.polyfills.min.js"></script>
-    <script src="../assets/js/select2/intltelinput.min.js"></script>
-    <script src="../assets/js/select2/telephone-input.js"></script>
-    <script src="../assets/js/select2/custom-inputsearch.js"></script>
-    <script src="../assets/js/select2/select3-custom.js"></script>
-
   </body>
 </html>
