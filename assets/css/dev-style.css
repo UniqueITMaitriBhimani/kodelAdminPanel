@@ -596,3 +596,43 @@
         .dt-search{
           display: none !important;
         }
+        .card-custom {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .card-custom:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .item-header {
+            background: #667eea !important;
+            color: white;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .transaction-card {
+            background: #fff;
+            border-left: 4px solid #e9ecef;
+            margin-bottom: 12px;
+        }
+        
+        .transaction-card.in {
+            border-color: #28a745;
+        }
+        
+        .transaction-card.out {
+            border-color: #dc3545;
+        }
+        
+        .badge-custom {
+            font-size: 0.75rem;
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+        }
+        
+        .text-muted-custom {
+            color: #6c757d !important;
+            font-size: 0.9rem;
+        }

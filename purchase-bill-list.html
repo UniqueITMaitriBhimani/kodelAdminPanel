@@ -249,7 +249,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Pending</h3>
+                  <h3>Purchase Bill</h3>
                 </div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb">
@@ -257,69 +257,72 @@
                         <svg class="stroke-icon">
                           <use href="./assets/svg/icon-sprite.svg#home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Order Managemen</li>
-                    <li class="breadcrumb-item active">Pending</li>
+                    <li class="breadcrumb-item">Billing Moduale</li>
+                    <li class="breadcrumb-item active">Purchase Bill</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-           <div class="container-fluid basic_table">
+          <div class="container-fluid basic_table">
             <div class="row">
-              <div class="col-xl-12 col-lg-7 box-col-6">
+                <div class="feature-products">
+                <div class="common-f-start justify-content-md-end mb-3"><a class="btn btn-primary f-w-500" href="purchase-bill.html"><i class="fa fa-plus pe-2"></i>Add Purchase Bill</a></div>
+              </div>
+              <div class="col-sm-12">
                 <div class="card">
-                  <div class="card-body px-0 py-0 ">
-                    <div class="table-responsive custom-scrollbar"> 
-                      <table class="table" id="main-recent-order">
-                        <thead> 
-                          <tr>
-                            <th></th>
-                            <th>No</th>
-                             <th>Order Number</th>
-                             <th>Distributer</th>
-                             <th>Item</th>
-                             <th>Pending Date</th>
-                             <th>Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                          <td></td>
-                          <td>1</td>
-                          <td>ORD-10525</td>
-                          <td>Orbit Tiles Pvt. Ltd.</td>
-                          <td>EVERGREEN LEATHER</td>
-                          <td>16/07/2025</td>
-                          <td>
-                           
-                             <a class="btn btn-sm btn-outline-primary me-1" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                <i class="fas fa-eye"></i>
-                             </a>
-                             <a href="view-distributor-management.html" data-bs-toggle="modal" data-bs-target="#exampleModallogin" class="text-info btn btn-sm btn-outline-info me-1">
-                               <i class="fas fa-truck"></i>
-                             </a>
-                          </td>
+                  <div class="table-responsive custom-scrollbar">
+                    <table class="table border-bottom-table">
+                      <thead>
+                        <tr class="border-bottom-primary">
+                          <th scope="col">No</th>
+                          <th scope="col">Vendor Name</th>
+                          <th scope="col">Bill Number</th>
+                          <th scope="col">Contact Number</th>
+                          <th scope="col">TotalItems</th>
+                          <th scope="col">Amount</th>
+                          <th scope="col">Document</th>
+                          <th scope="col">Action</th>
                         </tr>
-                          <tr>
-                          <td></td>
-                          <td>2</td>
-                          <td>ORD-10525</td>
-                          <td>Orbit Tiles Pvt. Ltd.</td>
-                          <td>ECO SCODA COVENTRY</td>
-                          <td>16/07/2025</td>
-                          <td>
-                              <a class="btn btn-sm btn-outline-primary me-1" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                <i class="fas fa-eye"></i>
-                             </a>
-                             <a href="view-distributor-management.html" data-bs-toggle="modal" data-bs-target="#exampleModallogin" class="text-info btn btn-sm btn-outline-info me-1">
-                               <i class="fas fa-truck"></i>
-                             </a>
-                          </td>
-                        </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                      </thead>
+                      <tbody>
+                         <tr>
+                           <td>1</td>
+                           <td>Vendor A</td>
+                           <td>INV-00123</td>
+                           <td>+1 234 567 890</td>
+                           <td>15</td>
+                           <td>$1,250.00</td>
+                         <td>
+                          <a href="dummy.pdf" download title="Download PDF">
+                            <i class="fas fa-file-pdf text-danger"></i>
+                          </a>
+                        </td>
+                           <td>
+                              <a href="purchase-bill.html" class="text-success btn btn-sm btn-outline-success me-1" title="Add"><i class="fas fa-plus-circle"></i></a>
+                              <a href="#" class="text-danger btn btn-sm btn-outline-danger me-1" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                         </tr>
+                         <tr>
+                           <td>2</td>
+                           <td>Vendor B</td>
+                           <td>INV-00124</td>
+                           <td>+91 98765 43210</td>
+                           <td>22</td>
+                           <td>₹18,000.00</td>
+                           <td>
+                          <a href="dummy.pdf" download title="Download PDF">
+                            <i class="fas fa-file-pdf text-danger"></i>
+                          </a>
+                        </td>
+                           <td>
+                              <a href="purchase-bill.html" class="text-success btn btn-sm btn-outline-success me-1" title="Add"><i class="fas fa-plus-circle"></i></a>
+                              <a href="#" class="text-danger btn btn-sm btn-outline-danger me-1" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                            </td>
+                         </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
