@@ -317,6 +317,7 @@
       cn: "å°éƒ¨ä»¶",
       ae: "ÙˆØ§Ù„Ø­Ø§Ø¬ÙŠØ§Øª",
     },
+ 
     {
       en: "Color Management",
       pt: "Layout da pÃ¡gina",
@@ -326,7 +327,15 @@
       cn: "é é¢ä½ˆå±€",
       ae: "ÙˆØªØ®Ø·ÙŠØ· Ø§Ù„ØµÙØ­Ø©",
     },
-
+{
+  en: "Team Management",
+  pt: "Ferramenta",
+  es: "Vidin",
+  fr: "Gestion d'équipe",
+  de: "Team Management",
+  cn: "团队管理",
+  ae: "إدارة الفريق"
+},
   ];
 
   $(".mobile-title svg").click(function () {

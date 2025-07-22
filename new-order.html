@@ -7,8 +7,8 @@
     <meta name="description" content="Paris admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Paris admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
     <title>Basic Tables | Paris - Premium Admin Template By Pixelstrap</title>
     <!-- Google font-->
     <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
@@ -33,14 +33,17 @@
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/sweetalert2.css">
     <!-- App css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link id="color" rel="stylesheet" href="./assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
-    <li><a href="login_with_sweetalert.html" target="_blank">Login with sweetalert</a></li>
-  </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
   <body>
     <!-- tap on top starts-->
     <div class="tap-top"><i data-feather="chevrons-up"></i></div>
@@ -76,7 +79,7 @@
             </div>
           </form>
           <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/app_full_logo.svg" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a></div>
             <div class="toggle-sidebar">
               <svg class="status_toggle middle sidebar-toggle">
                 <use href="./assets/svg/icon-sprite.svg#grid"></use>
@@ -121,7 +124,7 @@
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
           <div>
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/app_full_logo.svg" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a>
               <div class="back-btn"><i class="fa-solid fa-angle-left"></i></div>
               <div class="toggle-sidebar">
                 <svg class="status_toggle middle sidebar-toggle">
@@ -147,7 +150,7 @@
                       <h6 class="lan-1">General</h6>
                     </div>
                   </li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="#">
+                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="index.html">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#home"></use>
                       </svg><span>Dashboard</span></a></li>
@@ -158,36 +161,45 @@
                       </svg><span class="lan-6">Item Management</span></a>
                   </li>
                   
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"> </i><a class="sidebar-link sidebar-title" href="#">
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="list-distributor-management.html">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#project"></use>
-                      </svg><span>Distributor Management</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="list-distributor-management.html">Distributor List</a></li>
-                    </ul>
-                  </li>
+                      </svg><span>Distributor Management</span></a></li>
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
                      <svg>
                         <use href="./assets/svg/icon-sprite.svg#buy"></use>
                       </svg><span>Order Management</span></a>
                     <ul class="sidebar-submenu">
-                      <li><a href="new-order.html">New Order</a></li>
+                     <li><a href="new-order.html">New Order</a></li>
                       <li><a href="confirm-Order.html">Confirm Order</a></li>
                       <li><a href="Padding-order.html">Pending Order</a></li>
                      <li><a href="dispatch-order.html">Dispatch Order</a></li>
                       <li><a href="delivered-order.html">Delivered Order</a></li>
+                      <li><a href="Cancel-order.html">Cancel Order</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
-                    <i class="far fa-money-bill-alt"></i> 
-                    <span>Billing Moduale</span></a>
+                    <svg>
+                        <use href="./assets/svg/icon-sprite.svg#money"></use>
+                      </svg> 
+                    <span>Billing Module</span></a>
                     <ul class="sidebar-submenu">
-                      <li><a href="vendor-management.html">Vendor Management</a></li>
+                      <li><a href="list-vendor-management.html">Vendor Management</a></li>
                       <li><a href="purchase-bill-list.html">Purchase Bill</a></li>
                       <li><a href="Invoice-List.html">Invoice List</a></li>
-                      <li><a href="Stock-Management.html">Stock Management</a></li>
                     </ul>
                   </li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
+                <i class="icofont icofont-presentation-alt"></i>
+              <span>Stock Management</span></a></li>
+                 <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#learning"></use>
+                      </svg><span>Stock Management</span></a></li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="list-team-management.html">
+                      <svg>
+                        <use href="./assets/svg/icon-sprite.svg#user"></use>
+                      </svg><span>Team Management</span></a></li>
                 </ul>
               </div>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
@@ -200,24 +212,70 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>New Order</h3>
-                </div>
-                <div class="col-sm-6">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       
-                        <svg class="stroke-icon">
-                          <use href="./assets/svg/icon-sprite.svg#home"></use>
-                        </svg></a></li>
-                    <li class="breadcrumb-item">Order Managemen</li>
-                    <li class="breadcrumb-item active">New Order</li>
-                  </ol>
+                  <h3>Explore New Order Records</h3>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+             <div class="row">
+              <!-- Filter Button Start -->
+                <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3 mt-3">
+                  <button class="filter-custom-btn d-flex px-3 py-1" type="button" id="filter-button">
+                    <div class="icon me-2 mt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 64 64" id="filter" >
+                        <polygon fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4" points="2 6 2 10 26 34 26 58 38 58 38 34 62 10 62 6 2 6"></polygon>
+                      </svg>
+                    </div>
+                    <div  id="text"><span>Filter</span></div>
+                  </button>
+                </div>
+               <!-- Filter Button End -->
+            </div>
+            <div class="row mb-2" id="filter-form" style="height: 100% !important; max-height: 100% !important;">
+              <!-- Filter Form Start -->
+              <div class="col-sm-12">
+                <div class="card height-equal">
+                  <div class="card-body basic-wizard important-validation">
+                    <div id="msform p-3">
+                      <form class="stepper-one row needs-validation custom-input" novalidate=""> 
+                        <div class="col-md-4 position-relative">
+                          <label class="form-label" for="fromDate">From Date</label>
+                          <input class="form-control" id="fromDate" type="date" required>
+                          <div class="invalid-tooltip">Please select a valid From Date.</div>
+                        </div>
+
+                        <div class="col-md-4 position-relative">
+                          <label class="form-label" for="toDate">To Date</label>
+                          <input class="form-control" id="toDate" type="date" required>
+                          <div class="invalid-tooltip">Please select a valid To Date.</div>
+                        </div>
+
+                        <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
+                          <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
+                          <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Filter Form end -->
             </div>
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid basic_table">
             <div class="row">
+              <div class="feature-products">
+                <div class="common-f-start justify-content-md-end mb-3">
+                  <div class="job-filter me-2">
+                    <div class="faq-form">
+                      <input class="form-control" type="text" placeholder="Search..">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon"><circle   cx="11" cy="11" r="8"></circle><line x1="21" y1="21"   x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="col-sm-12">
                 <div class="card">
                   <div class="table-responsive custom-scrollbar">
@@ -241,16 +299,26 @@
                           <td>2025-07-15</td>
                           <td>
                             <div class="dropdown">
-                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" title="More Options">
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu bg-white shadow">
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
-                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                                <li>
+                                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                    <i class="fas fa-eye me-2" data-bs-toggle="tooltip" title="View Order"></i>View
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item text-danger deleteItem" href="#" data-bs-toggle="tooltip" title="Cancel Order">
+                                    <i class="fas fa-trash-alt me-2"></i>Cancel
+                                  </a>
+                                </li>
+                                
+                                <li>
+                                  <a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap">
+                                    <i class="fas fa-check-circle me-2" data-bs-toggle="tooltip" title="Confirm Order"></i>Confirm Order
+                                  </a>
+                                </li>
                               </ul>
                             </div>
                           </td>
@@ -268,11 +336,16 @@
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu bg-white shadow">
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                <li>
+                                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                    <i class="fas fa-eye me-2" data-bs-toggle="tooltip" title="View Order"></i>View
+                                  </a>
+                                </li>
+                              <li>
+                                  <a class="dropdown-item text-danger deleteItem" href="#" >
+                                    <i class="fas fa-trash-alt me-2"></i>Cancel
+                                  </a>
+                                </li>
                                 <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
                               </ul>
                             </div>
@@ -285,21 +358,31 @@
                           <td>Global Build Ltd</td>
                           <td>MAGNUM COLLECTION</td>
                           <td>2025-07-17</td>
-                          <td>
+                         <td>
                             <div class="dropdown">
-                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="More Options">
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu bg-white shadow">
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
-                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                                <li>
+                                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                    <i class="fas fa-eye me-2" data-bs-toggle="tooltip" title="View Order"></i>View
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item text-danger deleteItem" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Cancel Order">
+                                    <i class="fas fa-trash-alt me-2"></i>Cancel
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-bs-toggle="tooltip" data-bs-placement="left" title="Confirm Order">
+                                    <i class="fas fa-check-circle me-2"></i>Confirm Order
+                                  </a>
+                                </li>
                               </ul>
                             </div>
                           </td>
+
                         </tr>
                         <tr>
                           <th scope="row">4</th>
@@ -309,19 +392,29 @@
                           <td>2025-07-17</td>
                           <td>
                             <div class="dropdown">
-                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="More Options">
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu bg-white shadow">
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
-                                <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
+                                <li>
+                                  <a class="dropdown-item text-danger deleteItem" href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Cancel Order">
+                                    <i class="fas fa-trash-alt me-2"></i>Cancel
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal" data-bs-toggle="tooltip" data-bs-placement="left" title="View Order">
+                                    <i class="fas fa-eye me-2"></i>View
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-bs-toggle="tooltip" data-bs-placement="left" title="Confirm Order">
+                                    <i class="fas fa-check-circle me-2"></i>Confirm Order
+                                  </a>
+                                </li>
                               </ul>
                             </div>
                           </td>
+
                         </tr>
 
                         <tr>
@@ -336,11 +429,15 @@
                                 <i class="fas fa-ellipsis-v"></i>
                               </button>
                               <ul class="dropdown-menu bg-white shadow">
-                                <li><a class="dropdown-item text-danger" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-7']);" type="button" href="#"><i class="fas fa-ban me-2"></i>Cancel</a></li>
+                              <li>
+                                  <a class="dropdown-item text-danger deleteItem" href="#" >
+                                    <i class="fas fa-trash-alt me-2"></i>Cancel
+                                  </a>
+                                </li>
                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
                                         <i class="fas fa-eye me-2"></i>View
                                     </a></li>
-                                <li><a class="dropdown-item text-danger" href="#" ><i class="fas fa-trash-alt me-2"></i>Delete</a></li>
+                                
                                 <li><a class="dropdown-item text-success" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalgetbootstrap" data-whatever="@getbootstrap"><i class="fas fa-check-circle me-2"></i>Confirm Order</a></li>
                               </ul>
                             </div>
@@ -401,14 +498,30 @@
     </div>
 
     <div class="modal fade" id="viewOrderModal" tabindex="-1" aria-labelledby="viewOrderModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="view-distributor-price-modal-content">
-                <div class="view-distributor-price-modal-header">
-                    <h5 class="view-distributor-price-modal-title text-white" id="viewOrderModalLabel">
-                        <i class="fas fa-receipt me-2"></i>Order Details
-                    </h5>
-                    <button type="button" class="view-distributor-price-btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                </div>
+          <div class="modal-dialog modal-xl">
+            <div class="view-distributor-price-modal-content">
+                        <div class="view-distributor-price-modal-header">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h5 class="view-distributor-price-modal-title text-white" id="viewOrderModalLabel">
+                              <i class="fas fa-receipt me-2"></i>Order Details For KEROL-ENDURAPLATE
+                              </h5>
+                            </div>
+                            <div class="col-md-6">
+                                  <!-- Download Button -->
+                                <button type="button" class="view-distributor-price-btn-closefirst" data-bs-dismiss="modal" aria-label="Close"
+                                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download">
+                                  <i class="fas fa-download"></i> Download
+                                </button>
+
+
+                              
+                                <!-- Close Button -->
+                                <button type="button" class="view-distributor-price-btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+                            </div>
+                          </div>
+                        </div>
+
                 
                 <div class="view-distributor-price-modal-body">
                     <div class="row">
@@ -417,34 +530,39 @@
                             <div class="view-distributor-price-order-summary-card">
                                 
                                 <div class="view-distributor-info-grid">
-                                    <div class="view-distributor-price-info-grid">
-                                        <div class="view-distributor-price-info-label">Order Number</div>
-                                        <div class="view-distributor-price-info-value">#ORD-20250704</div>
+                                    <div class="d-flex">
+                                        <div class="view-distributor-price-info-label">Order Number:- &nbsp; </div>
+                                        <div class="view-distributor-price-info-value">  #ORD-20250704</div>
                                     </div>
-                                    <div class="view-distributor-price-info-grid">
-                                        <div class="view-distributor-price-info-label">Distributor</div>
+                                    <div class="d-flex">
+                                        <div class="view-distributor-price-info-label">Distributor:-&nbsp;</div>
                                         <div class="view-distributor-price-info-value">Infinity Ceramics</div>
                                     </div>
-                                    <div class="view-distributor-price-info-grid">
-                                        <div class="view-distributor-price-info-label">Product Item</div>
+                                    <div class="d-flex">
+                                        <div class="view-distributor-price-info-label">Product Item:-&nbsp;</div>
                                         <div class="view-distributor-price-info-value">KEROL-ENDURAPLATE</div>
                                     </div>
-                                    <div class="view-distributor-price-info-grid">
-                                        <div class="view-distributor-price-info-label">Order Date</div>
+                                    <div class="d-flex">
+                                        <div class="view-distributor-price-info-label">Order Date:-&nbsp;</div>
                                         <div class="view-distributor-price-info-value">July 17, 2025</div>
                                     </div>
-                                    <div class="view-distributor-price-info-grid">
-                                        <div class="view-distributor-price-info-label">Status</div>
+                                    <div class="d-flex">
+                                        <div class="view-distributor-price-info-label">Status:-&nbsp;</div>
                                         <div class="view-distributor-price-info-value">
                                             <span class="view-distributor-price-status-badge">
-                                                <i class="fas fa-check-circle me-1"></i>Confirmed
+                                                Confirmed
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="view-distributor-price-info-grid">
-                                        <div class="view-distributor-price-info-label">Total Amount</div>
+                                    <div class="d-flex">
+                                        <div class="view-distributor-price-info-label">Total Amount:-&nbsp;</div>
                                         <div class="view-distributor-price-info-value">₹45,750</div>
                                     </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Add/View Remarks">
+                                  <i class="fas fa-comment-dots me-1"></i> Remarks
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -458,72 +576,73 @@
                         </div>
                     </div>
                     
-                    <!-- Order Details Table -->
-                    <div class="view-distributor-price-product-order-table-container">
-                        <div class="view-distributor-price-product-order-table-header">
-                            <i class="fas fa-list me-2"></i>Order Line Items
-                        </div>
-                        <div class="view-distributor-order-table-responsive view-distributor-order-custom-scrollbar">
-                            <table class="table view-distributor-custom-table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">No</th>
-                                        <th scope="col">Color Name</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Total Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="view-distributor-row-number">1</div>
-                                        </td>
-                                        <td>Graphite Grey</td>
-                                        <td class="view-distributor-price-cell">₹150</td>
-                                        <td><span class="view-distributor-quantity-cell">50</span></td>
-                                        <td class="view-distributor-total-cell">₹7,500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="view-distributor-row-number">2</div>
-                                        </td>
-                                        <td>Mocha Brown</td>
-                                        <td class="view-distributor-price-cell">₹175</td>
-                                        <td><span class="view-distributor-quantity-cell">30</span></td>
-                                        <td class="view-distributor-total-cell">₹5,250</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="view-distributor-row-number">3</div>
-                                        </td>
-                                        <td>Slate Blue</td>
-                                        <td class="view-distributor-price-cell">₹200</td>
-                                        <td><span class="view-distributor-quantity-cell">75</span></td>
-                                        <td class="view-distributor-total-cell">₹15,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="view-distributor-row-number">4</div>
-                                        </td>
-                                        <td>Beige Sandstone</td>
-                                        <td class="view-distributor-price-cell">₹180</td>
-                                        <td><span class="view-distributor-quantity-cell">40</span></td>
-                                        <td class="view-distributor-total-cell">₹7,200</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="view-distributor-row-number">5</div>
-                                        </td>
-                                        <td>Rose Taupe</td>
-                                        <td class="view-distributor-price-cell">₹220</td>
-                                        <td><span class="view-distributor-quantity-cell">50</span></td>
-                                        <td class="view-distributor-total-cell">₹11,000</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <div class="col-sm-12">
+                <div class="card">
+                  <h3 class="p-2">Order Details List</h3>
+                  <div class="table-responsive custom-scrollbar">
+                    <table class="table border-bottom-table">
+                      <thead>
+                        <tr class="border-bottom-primary">
+                          <th scope="col">No</th>
+                          <th scope="col">Color Name</th>
+                          <th scope="col">Color Img</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Location</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Total Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                         <tr>
+                            <th scope="row">1</th>
+                            <td>Rose Taupe</td>
+                            <td><img src="/assets/images/color-leather/RoseTaupe.png" alt="Rose Taupe" width="100" class="img-thumbnail h-auto"></td>
+                            <td><span>₹100 / <small>Roll</small></span> <br> <span>₹90 / <small>Mrt</small></span></td>
+                            <td>Ahmedabad</td>
+                            <td><span>7 / <small>Roll</small></span> <br> <span>5 / <small>Mrt</small></span></td>
+                            <td><span>₹570 / <small>Roll</small></span> <br> <span>₹895 / <small>Mrt</small></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Beige Sandstone</td>
+                            <td><img src="/assets/images/color-leather/BeigeSandstone.jpg" alt="Beige Sandstone" width="100" class="img-thumbnail h-auto"></td>
+                            <td><span>₹100 / <small>Roll</small></span> <br> <span>₹90 / <small>Mrt</small></span></td>
+                            <td>Surat</td>
+                            <td><span>7 / <small>Roll</small></span> <br> <span>5 / <small>Mrt</small></span></td>
+                            <td><span>₹570 / <small>Roll</small></span> <br> <span>₹895 / <small>Mrt</small></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Graphite Grey</td>
+                            <td><img src="/assets/images/color-leather/GraphiteGrey.jpg" alt="Graphite Grey" width="100" class="img-thumbnail h-auto"></td>
+                            <td><span>₹100 / <small>Roll</small></span> <br> <span>₹90 / <small>Mrt</small></span></td>
+                            <td>Vadodara</td>
+                            <td><span>7 / <small>Roll</small></span> <br> <span>5 / <small>Mrt</small></span></td>
+                            <td><span>₹570 / <small>Roll</small></span> <br> <span>₹895 / <small>Mrt</small></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Black Carbon</td>
+                            <td><img src="/assets/images/color-leather/BlackCarbon.jpg" alt="Black Carbon" width="100" class="img-thumbnail h-auto"></td>
+                            <td><span>₹100 / <small>Roll</small></span> <br> <span>₹90 / <small>Mrt</small></span></td>
+                            <td>Rajkot</td>
+                            <td><span>7 / <small>Roll</small></span> <br> <span>5 / <small>Mrt</small></span></td>
+                            <td><span>₹570 / <small>Roll</small></span> <br> <span>₹895 / <small>Mrt</small></span></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Tan Premium</td>
+                            <td><img src="/assets/images/color-leather/TanPremium.jpg" alt="Tan Premium" width="100" class="img-thumbnail h-auto"></td>
+                            <td><span>₹100 / <small>Roll</small></span> <br> <span>₹90 / <small>Mrt</small></span></td>
+                            <td>Bhavnagar</td>
+                            <td><span>7 / <small>Roll</small></span> <br> <span>5 / <small>Mrt</small></span></td>
+                            <td><span>₹570 / <small>Roll</small></span> <br> <span>₹895 / <small>Mrt</small></span></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
                 </div>
             </div>
   </div>
@@ -535,7 +654,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal-toggle-wrapper"> 
-              <h4><strong class="txt-danger">Conform</strong> Order</h4>
+              <h4><strong class="txt-danger">Confirm</strong> Order</h4>
               <div class="container-fluid basic_table">
             <div class="row mt-3">
               <div class="col-sm-12">
@@ -547,7 +666,7 @@
                           <th scope="col">No</th>
                           <th scope="col">Color Number</th>
                           <th scope="col">Current Order</th>
-                          <th scope="col">Conform Name</th>
+                          <th scope="col">Confirm Price</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -556,8 +675,8 @@
                             <td>Slate Blue</td>
                             <td>
                               <div class="d-flex flex-column">
-                                <span class="badge btn-outline-warning text-dark mb-1"> ₹ 520 / Roll</span>
-                                <span class="badge btn-outline-info text-dark"> ₹ 52 / Mtr</span>
+                                <span class="badge btn-outline-warning text-dark mb-1"> 520  Roll</span>
+                                <span class="badge btn-outline-info text-dark"> 52 Mtr</span>
                               </div>
                             </td>
                             <td>
@@ -571,8 +690,8 @@
                             <td>Rose Taupe</td>
                             <td>
                               <div class="d-flex flex-column">
-                                <span class="badge btn-outline-warning text-dark mb-1"> ₹ 480 / Roll</span>
-                                <span class="badge btn-outline-info text-dark"> ₹ 48 / Mtr</span>
+                                <span class="badge btn-outline-warning text-dark mb-1"> 480  Roll</span>
+                                <span class="badge btn-outline-info text-dark"> 48 Mtr</span>
                               </div>
                             </td>
                             <td>
@@ -586,8 +705,8 @@
                             <td>Beige Sandstone</td>
                             <td>
                               <div class="d-flex flex-column">
-                                <span class="badge btn-outline-warning text-dark mb-1"> ₹ 500 / Roll</span>
-                                <span class="badge btn-outline-info text-dark"> ₹ 50 / Mtr</span>
+                                <span class="badge btn-outline-warning text-dark mb-1"> 500  Roll</span>
+                                <span class="badge btn-outline-info text-dark"> 50 Mtr</span>
                               </div>
                             </td>
                             <td>
@@ -610,7 +729,71 @@
         </div>
       </div>
     </div>
-    <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;"><div aria-labelledby="swal2-title" aria-describedby="swal2-html-container" class="swal2-popup swal2-modal swal2-icon-warning swal2-show" tabindex="-1" role="dialog" aria-live="assertive" aria-modal="true" style="display: grid;"><button type="button" class="swal2-close" aria-label="Close this dialog" style="display: none;">×</button><ul class="swal2-progress-steps" style="display: none;"></ul><div class="swal2-icon swal2-warning swal2-icon-show" style="display: flex;"><div class="swal2-icon-content">!</div></div><img class="swal2-image" style="display: none;"><h2 class="swal2-title" id="swal2-title" style="display: block;">Are you sure?</h2><div class="swal2-html-container" id="swal2-html-container" style="display: block;">You won't be able to revert this!</div><input id="swal2-input" class="swal2-input" style="display: none;"><input type="file" class="swal2-file" style="display: none;"><div class="swal2-range" style="display: none;"><input type="range"><output></output></div><select id="swal2-select" class="swal2-select" style="display: none;"></select><div class="swal2-radio" style="display: none;"></div><label class="swal2-checkbox" style="display: none;"><input type="checkbox" id="swal2-checkbox"><span class="swal2-label"></span></label><textarea id="swal2-textarea" class="swal2-textarea" style="display: none;"></textarea><div class="swal2-validation-message" id="swal2-validation-message" style="display: none;"></div><div class="swal2-actions" style="display: flex;"><div class="swal2-loader"></div><button type="button" class="swal2-confirm swal2-styled swal2-default-outline" aria-label="" style="display: inline-block; background-color: rgb(22, 199, 249);">Yes, delete it!</button><button type="button" class="swal2-deny swal2-styled" aria-label="" style="display: none;">No</button><button type="button" class="swal2-cancel swal2-styled swal2-default-outline" aria-label="" style="display: inline-block; background-color: rgb(252, 68, 56);">Cancel</button></div><div class="swal2-footer" style="display: none;"></div><div class="swal2-timer-progress-bar-container"><div class="swal2-timer-progress-bar" style="display: none;"></div></div></div></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const deleteLinks = document.querySelectorAll('.deleteItem');
+
+    deleteLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#16c7f9',
+          cancelButtonColor: '#fc4438',
+          confirmButtonText: 'Yes, delete it!',
+          cancelButtonText: 'Cancel'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // You can add your delete logic here
+            Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
+          }
+        });
+      });
+    });
+  });
+</script>
+
+     <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterBtn = document.getElementById("filter-button");
+    const filterForm = document.getElementById("filter-form");
+    const clearBtn = document.getElementById("nextbtn");
+
+    // Initially hide the filter form
+    filterForm.style.display = "none";
+
+    // Toggle filter form on button click
+    filterBtn.addEventListener("click", () => {
+      if (filterForm.style.display === "none") {
+        filterForm.style.display = "flex"; // or "block" for vertical layout
+      } else {
+        filterForm.style.display = "none";
+      }
+    });
+
+    // Clear all inputs and selects
+    clearBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const form = clearBtn.closest("form");
+      form.reset();
+    });
+  });
+</script>
     <!-- latest jquery-->
     <script src="./assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
@@ -634,5 +817,10 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
+    <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    
   </body>
 </html>

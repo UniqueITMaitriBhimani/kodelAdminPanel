@@ -7,8 +7,8 @@
     <meta name="description" content="Paris admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Paris admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
     <title>Form Validation | Paris - Premium Admin Template By Pixelstrap</title>
     <!-- Google font-->
     <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
@@ -38,8 +38,11 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link id="color" rel="stylesheet" href="./assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body> 
     <!-- loader starts-->
@@ -76,7 +79,7 @@
             </div>
           </form>
           <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/app_full_logo.svg" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a></div>
             <div class="toggle-sidebar">
               <svg class="status_toggle middle sidebar-toggle">
                 <use href="./assets/svg/icon-sprite.svg#grid"></use>
@@ -121,7 +124,7 @@
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
           <div>
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/app_full_logo.svg" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a>
               <div class="back-btn"><i class="fa-solid fa-angle-left"></i></div>
               <div class="toggle-sidebar">
                 <svg class="status_toggle middle sidebar-toggle">
@@ -158,36 +161,42 @@
                       </svg><span class="lan-6">Item Management</span></a>
                   </li>
                   
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"> </i><a class="sidebar-link sidebar-title" href="#">
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="list-distributor-management.html">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#project"></use>
-                      </svg><span>Distributor Management</span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a href="list-distributor-management.html">Distributor List</a></li>
-                    </ul>
-                  </li>
+                      </svg><span>Distributor Management</span></a></li>
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
                      <svg>
                         <use href="./assets/svg/icon-sprite.svg#buy"></use>
                       </svg><span>Order Management</span></a>
                     <ul class="sidebar-submenu">
-                      <li><a href="new-order.html">New Order</a></li>
+                     <li><a href="new-order.html">New Order</a></li>
                       <li><a href="confirm-Order.html">Confirm Order</a></li>
                       <li><a href="Padding-order.html">Pending Order</a></li>
                      <li><a href="dispatch-order.html">Dispatch Order</a></li>
                       <li><a href="delivered-order.html">Delivered Order</a></li>
+                      <li><a href="Cancel-order.html">Cancel Order</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
-                    <i class="far fa-money-bill-alt"></i> 
-                    <span>Billing Moduale</span></a>
+                     <svg>
+                        <use href="./assets/svg/icon-sprite.svg#money"></use>
+                      </svg> 
+                     <span>Billing Module</span></a>
                     <ul class="sidebar-submenu">
-                      <li><a href="vendor-management.html">Vendor Management</a></li>
+                       <li><a href="list-vendor-management.html">Vendor Module</a></li>
                       <li><a href="purchase-bill-list.html">Purchase Bill</a></li>
                       <li><a href="Invoice-List.html">Invoice List</a></li>
-                      <li><a href="Stock-Management.html">Stock Management</a></li>
                     </ul>
                   </li>
+                 <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
+                      <svg>
+                        <use href="../assets/svg/icon-sprite.svg#learning"></use>
+                      </svg><span>Stock Management</span></a></li>
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="list-team-management.html">
+                      <svg>
+                        <use href="./assets/svg/icon-sprite.svg#user"></use>
+                      </svg><span>Team Management</span></a></li>
                 </ul>
               </div>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
@@ -200,17 +209,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Add Item</h3>
-                </div>
-                <div class="col-sm-6">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">                                       
-                        <svg class="stroke-icon">
-                          <use href="./assets/svg/icon-sprite.svg#home"></use>
-                        </svg></a></li>
-                    <li class="breadcrumb-item"> Item List</li>
-                    <li class="breadcrumb-item active"> Add Item</li>
-                  </ol>
+                  <h3>Add New Product Item</h3>
                 </div>
               </div>
             </div>

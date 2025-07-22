@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Collections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #7c3aed 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .view-dealer--priceing-list-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .view-dealer--priceing-list-title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .view-dealer--priceing-list-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .view-dealer--priceing-list-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .view-dealer--priceing-list-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.25);
+        }
+
+        .view-dealer--priceing-list-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #4f46e5, #7c3aed, #ec4899);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .view-dealer--priceing-list-card:hover:before {
+            opacity: 1;
+        }
+
+        .view-dealer--priceing-list-card-header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            padding: 25px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-dealer--priceing-list-card-header:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+            transition: transform 0.6s ease;
+        }
+
+        .view-dealer--priceing-list-card:hover .view-dealer--priceing-list-card-header:after {
+            transform: rotate(45deg) translate(50%, -50%);
+        }
+
+        .view-dealer--priceing-list-collection-title {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        .view-dealer--priceing-list-card-body {
+            padding: 30px;
+        }
+
+        .view-dealer--priceing-list-section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #4338ca;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .view-dealer--priceing-list-colors-container {
+            margin-bottom: 25px;
+        }
+
+        .view-dealer--priceing-list-color-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            color: #475569;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 4px 6px 4px 0;
+            border: 1px solid #cbd5e1;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-dealer--priceing-list-color-badge:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .view-dealer--priceing-list-color-badge:hover:before {
+            left: 100%;
+        }
+
+        .view-dealer--priceing-list-color-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+            border-color: #6366f1;
+        }
+
+        .view-dealer--priceing-list-price-display {
+            background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-dealer--priceing-list-price-display:before {
+            content: '💰';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 3rem;
+            opacity: 0.1;
+            transform: rotate(15deg);
+        }
+
+        .view-dealer--priceing-list-price-amount {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #92400e;
+            line-height: 1;
+            position: relative;
+            z-index: 2;
+        }
+
+        .view-dealer--priceing-list-price-unit {
+            color: #a16207;
+            font-weight: 600;
+            margin-top: 4px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .view-dealer--priceing-list-info-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .view-dealer--priceing-list-info-item {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border: 1px solid #c4b5fd;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .view-dealer--priceing-list-info-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.15);
+        }
+
+        .view-dealer--priceing-list-info-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #5b21b6;
+            margin-bottom: 5px;
+        }
+
+        .view-dealer--priceing-list-info-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #3730a3;
+        }
+
+        .view-dealer--priceing-list-items-section {
+            margin-top: 20px;
+        }
+
+        .view-dealer--priceing-list-item-name {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            color: #047857;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #a7f3d0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .view-dealer--priceing-list-item-name:before {
+            content: '✨';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .view-dealer--priceing-list-item-name:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.2);
+        }
+
+        .view-dealer--priceing-list-item-name:hover:before {
+            opacity: 1;
+        }
+
+        /* Special styling for different card variants */
+        .view-dealer--priceing-list-card:nth-child(1) .view-dealer--priceing-list-card-header {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
+
+        .view-dealer--priceing-list-card:nth-child(2) .view-dealer--priceing-list-card-header {
+            background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+        }
+
+        .view-dealer--priceing-list-card:nth-child(3) .view-dealer--priceing-list-card-header {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .view-dealer--priceing-list-card:nth-child(4) .view-dealer--priceing-list-card-header {
+            background: linear-gradient(135deg, #6b7280 0%, #374151 100%);
+        }
+
+        @media (max-width: 768px) {
+            .view-dealer--priceing-list-row {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .view-dealer--priceing-list-title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .view-dealer--priceing-list-card-body {
+                padding: 20px;
+            }
+
+            .view-dealer--priceing-list-info-row {
+                gap: 10px;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .view-dealer--priceing-list-card:hover {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="view-dealer--priceing-list-container">
+        <h1 class="view-dealer--priceing-list-title">Premium Product Collections</h1>
+        
+        <div class="view-dealer--priceing-list-row">
+            <!-- Card 1 - ECO Collection -->
+            <div class="view-dealer--priceing-list-card">
+                <div class="view-dealer--priceing-list-card-header">
+                    <h3 class="view-dealer--priceing-list-collection-title">ECO Collection</h3>
+                </div>
+                <div class="view-dealer--priceing-list-card-body">
+                    <div class="view-dealer--priceing-list-section-title">🎨 Available Colors</div>
+                    <div class="view-dealer--priceing-list-colors-container">
+                        <span class="view-dealer--priceing-list-color-badge">Graphite Grey</span>
+                        <span class="view-dealer--priceing-list-color-badge">Mocha Brown</span>
+                        <span class="view-dealer--priceing-list-color-badge">Slate Blue</span>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-price-display">
+                        <div class="view-dealer--priceing-list-price-amount">₹200</div>
+                        <div class="view-dealer--priceing-list-price-unit">per sq.m</div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-info-row">
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Row</div>
+                            <div class="view-dealer--priceing-list-info-value">A</div>
+                        </div>
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Box</div>
+                            <div class="view-dealer--priceing-list-info-value">1</div>
+                        </div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-items-section">
+                        <div class="view-dealer--priceing-list-section-title">📦 Product Items</div>
+                        <div class="view-dealer--priceing-list-item-name">ECO SCODA COVENTRY</div>
+                        <div class="view-dealer--priceing-list-item-name">EVERGREEN LEATHER</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - PREMIUM Series -->
+            <div class="view-dealer--priceing-list-card">
+                <div class="view-dealer--priceing-list-card-header">
+                    <h3 class="view-dealer--priceing-list-collection-title">PREMIUM Series</h3>
+                </div>
+                <div class="view-dealer--priceing-list-card-body">
+                    <div class="view-dealer--priceing-list-section-title">🎨 Available Colors</div>
+                    <div class="view-dealer--priceing-list-colors-container">
+                        <span class="view-dealer--priceing-list-color-badge">Pearl White</span>
+                        <span class="view-dealer--priceing-list-color-badge">Silver Grey</span>
+                        <span class="view-dealer--priceing-list-color-badge">Cream Ivory</span>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-price-display">
+                        <div class="view-dealer--priceing-list-price-amount">₹350</div>
+                        <div class="view-dealer--priceing-list-price-unit">per sq.m</div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-info-row">
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Row</div>
+                            <div class="view-dealer--priceing-list-info-value">A</div>
+                        </div>
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Box</div>
+                            <div class="view-dealer--priceing-list-info-value">1</div>
+                        </div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-items-section">
+                        <div class="view-dealer--priceing-list-section-title">📦 Product Items</div>
+                        <div class="view-dealer--priceing-list-item-name">PREMIUM MARBLE FINISH</div>
+                        <div class="view-dealer--priceing-list-item-name">LUXURY STONE TEXTURE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - VIBRANT Range -->
+            <div class="view-dealer--priceing-list-card">
+                <div class="view-dealer--priceing-list-card-header">
+                    <h3 class="view-dealer--priceing-list-collection-title">VIBRANT Range</h3>
+                </div>
+                <div class="view-dealer--priceing-list-card-body">
+                    <div class="view-dealer--priceing-list-section-title">🎨 Available Colors</div>
+                    <div class="view-dealer--priceing-list-colors-container">
+                        <span class="view-dealer--priceing-list-color-badge">Coral Pink</span>
+                        <span class="view-dealer--priceing-list-color-badge">Warm Red</span>
+                        <span class="view-dealer--priceing-list-color-badge">Peach Tone</span>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-price-display">
+                        <div class="view-dealer--priceing-list-price-amount">₹275</div>
+                        <div class="view-dealer--priceing-list-price-unit">per sq.m</div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-info-row">
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Row</div>
+                            <div class="view-dealer--priceing-list-info-value">A</div>
+                        </div>
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Box</div>
+                            <div class="view-dealer--priceing-list-info-value">1</div>
+                        </div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-items-section">
+                        <div class="view-dealer--priceing-list-section-title">📦 Product Items</div>
+                        <div class="view-dealer--priceing-list-item-name">COLORFUL MOSAIC</div>
+                        <div class="view-dealer--priceing-list-item-name">DESIGNER SERIES</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 - DARK Edition -->
+            <div class="view-dealer--priceing-list-card">
+                <div class="view-dealer--priceing-list-card-header">
+                    <h3 class="view-dealer--priceing-list-collection-title">DARK Edition</h3>
+                </div>
+                <div class="view-dealer--priceing-list-card-body">
+                    <div class="view-dealer--priceing-list-section-title">🎨 Available Colors</div>
+                    <div class="view-dealer--priceing-list-colors-container">
+                        <span class="view-dealer--priceing-list-color-badge">Shadow Grey</span>
+                        <span class="view-dealer--priceing-list-color-badge">Onyx Black</span>
+                        <span class="view-dealer--priceing-list-color-badge">Steel Blue</span>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-price-display">
+                        <div class="view-dealer--priceing-list-price-amount">₹450</div>
+                        <div class="view-dealer--priceing-list-price-unit">per sq.m</div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-info-row">
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Row</div>
+                            <div class="view-dealer--priceing-list-info-value">D</div>
+                        </div>
+                        <div class="view-dealer--priceing-list-info-item">
+                            <div class="view-dealer--priceing-list-info-label">Box</div>
+                            <div class="view-dealer--priceing-list-info-value">4</div>
+                        </div>
+                    </div>
+
+                    <div class="view-dealer--priceing-list-items-section">
+                        <div class="view-dealer--priceing-list-section-title">📦 Product Items</div>
+                        <div class="view-dealer--priceing-list-item-name">DARK LUXURY TILES</div>
+                        <div class="view-dealer--priceing-list-item-name">MIDNIGHT SERIES</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

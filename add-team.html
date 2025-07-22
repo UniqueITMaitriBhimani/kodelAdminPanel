@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,14 +9,13 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
-    <title>Default Dashboard | Paris - Premium Admin Template By Pixelstrap</title>
+    <title>Form Validation | Paris - Premium Admin Template By Pixelstrap</title>
     <!-- Google font-->
     <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/icofont.min.css">
     <!-- Latest Font Awesome 6 (Free) CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
     <!-- Font Awesome-->
     <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome.css">
     <!-- ico-font-->
@@ -32,9 +31,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/scrollbar.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/animate.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/select.bootstrap5.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/vector-map1/jsvectormap.min.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
@@ -128,7 +124,7 @@
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-sidebar-layout="stroke-svg">
           <div>
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/app_full_logo.svg" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light " src="./assets/images/logo/app_full_logo.svg" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo_dark.png" alt=""></a>
               <div class="back-btn"><i class="fa-solid fa-angle-left"></i></div>
               <div class="toggle-sidebar">
                 <svg class="status_toggle middle sidebar-toggle">
@@ -193,7 +189,7 @@
                       <li><a href="Invoice-List.html">Invoice List</a></li>
                     </ul>
                   </li>
-                <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
+                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
                       <svg>
                         <use href="../assets/svg/icon-sprite.svg#learning"></use>
                       </svg><span>Stock Management</span></a></li>
@@ -213,14 +209,133 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Kodel Admin Dashboard </h3>
+                  <h3>Add New Team Member</h3>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid default-dashboard">
-            <div class="row"> 
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="row g-3 needs-validation custom-input" novalidate="">
+                      <form class="row g-3 needs-validation custom-input" novalidate>
+                          <!-- User Name -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="userName">User Name</label>
+                            <input type="text" class="form-control" id="userName" name="userName" required>
+                            <div class="valid-tooltip">Looks good!</div>
+                          </div>
+                      
+                          <!-- Email -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-tooltip">Please provide a valid email.</div>
+                          </div>
+                      
+                          <!-- Contact Number -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="contactNumber">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" required>
+                            <div class="invalid-tooltip">Please enter a 10-digit number.</div>
+                          </div>
+                      
+                          <!-- Birth Date -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="birthDate">Birth Date</label>
+                            <input type="date" class="form-control" id="birthDate" name="birthDate" required>
+                            <div class="invalid-tooltip">Please select your birth date.</div>
+                          </div>
+                      
+                          <!-- Role -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="role">Role</label>
+                            <select class="form-select" id="role" name="role" required>
+                              <option selected disabled value="">Choose...</option>
+                              <option>Admin</option>
+                              <option>Order Management</option>
+                              <option>Item Management</option>
+                              <option>Dispatch Manager</option>
+                              <option>Viewer</option>
+                            </select>
+                            <div class="invalid-tooltip">Please select a role.</div>
+                          </div>
+                      
+                          <!-- Password -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <div class="invalid-tooltip">Please enter a password.</div>
+                          </div>
+                      
+                          <!-- Address -->
+                          <div class="col-12 position-relative">
+                            <label class="form-label" for="address">Address</label>
+                            <textarea class="form-control" id="address" name="address" rows="2" required></textarea>
+                            <div class="invalid-tooltip">Please provide an address.</div>
+                          </div>
+                      
+                          <!-- Country -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="country">Country</label>
+                            <select class="form-select" id="country" name="country" required>
+                              <option selected disabled value="">Choose...</option>
+                              <option>India</option>
+                              <option>U.S</option>
+                              <option>U.K</option>
+                              <option>Thailand</option>
+                            </select>
+                            <div class="invalid-tooltip">Please select a country.</div>
+                          </div>
+                      
+                          <!-- State -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="state">State</label>
+                            <select class="form-select" id="state" name="state" required>
+                              <option selected disabled value="">Choose...</option>
+                              <option>Gujarat</option>
+                              <option>Maharashtra</option>
+                              <option>California</option>
+                              <option>Bangkok</option>
+                            </select>
+                            <div class="invalid-tooltip">Please select a state.</div>
+                          </div>
+                      
+                          <!-- City -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="city">City</label>
+                            <select class="form-select" id="city" name="city" required>
+                              <option selected disabled value="">Choose...</option>
+                              <option>Morbi</option>
+                              <option>Mumbai</option>
+                              <option>Los Angeles</option>
+                              <option>Bangkok City</option>
+                            </select>
+                            <div class="invalid-tooltip">Please select a city.</div>
+                          </div>
+                      
+                          <!-- Zip Code -->
+                          <div class="col-md-6 position-relative">
+                            <label class="form-label" for="zipCode">Zip Code</label>
+                            <input type="text" class="form-control" id="zipCode" name="zipCode" pattern="[0-9]{5,6}" required>
+                            <div class="invalid-tooltip">Please enter a valid zip code.</div>
+                          </div>
+                      
+                          <!-- Description -->
+                          <div class="col-md-12 position-relative">
+                            <label class="form-label" for="description">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="2"></textarea>
+                            <div class="valid-tooltip">Optional field</div>
+                          </div>
+                        </form>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Container-fluid Ends-->
@@ -255,25 +370,10 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <script src="./assets/js/slick/slick.js"></script>
     <script src="./assets/js/header-slick.js"></script>
-    <script src="./assets/js/chart/apex-chart/apex-chart.js"></script>
-    <script src="./assets/js/chart/apex-chart/stock-prices.js"></script>
-    <script src="./assets/js/counter/counter-custom.js"></script>
-    <script src="./assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="./assets/js/dashboard/default.js"></script>
-    <script src="./assets/js/notify/index.js"></script>
-    <script src="./assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="./assets/js/datatable/datatables/dataTables.js"></script>
-    <script src="./assets/js/datatable/datatables/dataTables.select.js"></script>
-    <script src="./assets/js/datatable/datatables/select.bootstrap5.js"></script>
-    <script src="./assets/js/datatable/datatables/datatable.custom.js"></script>
-    <script src="./assets/js/typeahead/handlebars.js"></script>
-    <script src="./assets/js/typeahead/typeahead.bundle.js"></script>
-    <script src="./assets/js/typeahead/typeahead.custom.js"></script>
-    <script src="./assets/js/typeahead-search/handlebars.js"></script>
-    <script src="./assets/js/typeahead-search/typeahead-custom.js"></script>
-    <script src="./assets/js/vector-map1/jsvectormap.js"></script>
-    <script src="./assets/js/vector-map1/world.js"></script>
-    <script src="./assets/js/vector-map1/custom-vectormap.js"></script>
+    <script src="./assets/js/form-validation-custom.js"></script>
+    <script src="./assets/js/height-equal.js"></script>
+    <script src="./assets/js/custom-animated-form.js"></script>
+    <script src="./assets/js/custom-pwd-validation.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="./assets/js/script.js"></script>

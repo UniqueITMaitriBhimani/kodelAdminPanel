@@ -10,7 +10,6 @@
     <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
     <title>Basic Tables | Paris - Premium Admin Template By Pixelstrap</title>
-      <link rel="stylesheet" type="text/css" href="../assets/css/vendors/sweetalert2.css">
     <!-- Google font-->
     <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
 
@@ -251,7 +250,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Track Dispatched Orders </h3>
+                  <h3>Cancel Orders Overview</h3>
                 </div>
               </div>
             </div>
@@ -327,7 +326,7 @@
                              <th>Order Number</th>
                              <th>Distributer</th>
                              <th>Item</th>
-                             <th>Dispatch Order Date</th>
+                             <th>Cancel Date</th>
                              <th>Action</th>
                           </tr>
                         </thead>
@@ -339,24 +338,11 @@
                           <td>Orbit Tiles Pvt. Ltd.</td>
                           <td>EVERGREEN LEATHER</td>
                           <td>16/07/2025</td>
-                         
                           <td>
-                            <div class="dropdown">
-                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-ellipsis-v"></i>
-                              </button>
-                              <ul class="dropdown-menu bg-white shadow">
-                               <li>
-                                  <a class="dropdown-item text-success dispatch-confirm" href="#" >
-                                    <i class="fas fa-shipping-fast me-2"></i>Deliver
-                                  </a>
-                                </li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                </li> 
-                              </ul>
-                            </div>
+                           
+                             <a class="btn btn-sm btn-outline-primary me-1" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                <i class="fas fa-eye"></i>
+                             </a>
                           </td>
                         </tr>
                           <tr>
@@ -366,49 +352,10 @@
                           <td>Orbit Tiles Pvt. Ltd.</td>
                           <td>ECO SCODA COVENTRY</td>
                           <td>16/07/2025</td>
-                           <td>
-                            <div class="dropdown">
-                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-ellipsis-v"></i>
-                              </button>
-                              <ul class="dropdown-menu bg-white shadow">
-                               <li>
-                                  <a class="dropdown-item text-success dispatch-confirm" href="#" >
-                                    <i class="fas fa-shipping-fast me-2"></i>Deliver
-                                  </a>
-                                </li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                </li> 
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                         <tr>
-                          <td></td>
-                          <td>2</td>
-                          <td>ORD-10525</td>
-                          <td>Orbit Tiles Pvt. Ltd.</td>
-                          <td>ECO SCODA COVENTRY</td>
-                          <td>16/07/2025</td>
                           <td>
-                            <div class="dropdown">
-                              <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-ellipsis-v"></i>
-                              </button>
-                              <ul class="dropdown-menu bg-white shadow">
-                              <li>
-                                  <a class="dropdown-item text-success dispatch-confirm" href="#" >
-                                    <i class="fas fa-shipping-fast me-2"></i>Deliver
-                                  </a>
-                                </li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
-                                        <i class="fas fa-eye me-2"></i>View
-                                    </a></li>
-                                </li> 
-                              </ul>
-                            </div>
+                              <a class="btn btn-sm btn-outline-primary me-1" href="#" data-bs-toggle="modal" data-bs-target="#viewOrderModal">
+                                <i class="fas fa-eye"></i>
+                             </a>
                           </td>
                         </tr>
                         </tbody>
@@ -618,39 +565,42 @@
   </div>
 </div>
 
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const dispatchLinks = document.querySelectorAll('.dispatch-confirm');
-
-    dispatchLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        Swal.fire({
-          title: 'Are you sure?',
-          text: 'Do you want to confirm dispatch?',
-          icon: 'warning',
-          showCancelButton: true,
-          confirmButtonColor: '#28a745',
-          cancelButtonColor: '#d33',
-          confirmButtonText: 'Yes, Confirm',
-          cancelButtonText: 'Cancel'
-        }).then((result) => {
-          if (result.isConfirmed) {
-            Swal.fire({
-              title: 'Confirmed!',
-              text: 'Dispatch successfully confirmed.',
-              icon: 'success',
-              confirmButtonColor: '#28a745'
-            });
-          }
-        });
-      });
-    });
-  });
-</script>
-     <script>
+ <div class="modal fade" id="exampleModallogin" tabindex="-1" role="dialog" aria-labelledby="exampleModallogin" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+         <div class="modal-content">
+           <div class="modal-body social-profile text-start dark-sign-up">
+             <div class="modal-toggle-wrapper">
+               <h3>Dispatch</h3>
+               <form class="row g-3 mt-3">
+                
+                 <div class="col-md-12 position-relative">
+                        <label class="form-label" for="validationTooltipnumber">Phone No</label>
+                        <input class="form-control" id="validationTooltipnumber" type="number" required="">
+                        <div class="valid-tooltip">Looks good!</div>
+                      </div>
+                      <div class="col-md-12 position-relative">
+                        <label class="form-label" for="validationTooltipName">Name</label>
+                        <input class="form-control" id="validationTooltipName" type="text" required="">
+                        <div class="valid-tooltip">Looks good!</div>
+                      </div>
+                      <div class="col-md-12">
+                   <textarea name="" id="" placeholder="description" class="w-100 border-light rounded "></textarea>
+                 </div>
+                      <div class="col-md-12 position-relative">
+                        <label class="form-label" for="validationTooltipCharges">Our Charges</label>
+                        <input class="form-control" id="validationTooltipCharges" type="text" required="">
+                        <div class="valid-tooltip">Looks good!</div>
+                      </div>
+                 <div class="col-12 d-flex justify-content-center">
+                   <button class="btn btn-primary" type="submit" data-bs-dismiss="modal">Save </button>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+          <script>
   document.addEventListener("DOMContentLoaded", function () {
     const filterBtn = document.getElementById("filter-button");
     const filterForm = document.getElementById("filter-form");
@@ -676,14 +626,10 @@
     });
   });
 </script>
-
     <!-- latest jquery-->
     <script src="./assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
     <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- SweetAlert2 CDN -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <!-- feather icon js-->
     <script src="./assets/js/icons/feather-icon/feather.min.js"></script>
     <script src="./assets/js/icons/feather-icon/feather-icon.js"></script>
