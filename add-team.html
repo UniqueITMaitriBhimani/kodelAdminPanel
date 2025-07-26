@@ -42,6 +42,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./assets/css/select2.min.css">
+    
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body> 
@@ -251,18 +253,24 @@
                           </div>
                       
                           <!-- Role -->
-                          <div class="col-md-6 position-relative">
-                            <label class="form-label" for="role">Role</label>
-                            <select class="form-select" id="role" name="role" required>
-                              <option selected disabled value="">Choose...</option>
-                              <option>Admin</option>
-                              <option>Order Management</option>
-                              <option>Item Management</option>
-                              <option>Dispatch Manager</option>
-                              <option>Viewer</option>
-                            </select>
-                            <div class="invalid-tooltip">Please select a role.</div>
-                          </div>
+                          <!-- Role Dropdown -->
+                        <div class="col-md-6">
+                          <label class="form-label">Select Role</label>
+                          <select class="single-select form-control">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="admin">Admin</option>
+                            <option value="editor">Editor</option>
+                            <option value="moderator">Moderator</option>
+                            <option value="user">User</option>
+                            <option value="guest">Guest</option>
+                            <option value="manager">Manager</option>
+                            <option value="superadmin">Super Admin</option>
+                            <option value="support">Support</option>
+                            <option value="developer">Developer</option>
+                            <option value="analyst">Analyst</option>
+                          </select>
+                        </div>
+
                       
                           <!-- Password -->
                           <div class="col-md-6 position-relative">
@@ -278,44 +286,87 @@
                             <div class="invalid-tooltip">Please provide an address.</div>
                           </div>
                       
-                          <!-- Country -->
-                          <div class="col-md-6 position-relative">
-                            <label class="form-label" for="country">Country</label>
-                            <select class="form-select" id="country" name="country" required>
-                              <option selected disabled value="">Choose...</option>
-                              <option>India</option>
-                              <option>U.S</option>
-                              <option>U.K</option>
-                              <option>Thailand</option>
-                            </select>
-                            <div class="invalid-tooltip">Please select a country.</div>
-                          </div>
-                      
-                          <!-- State -->
-                          <div class="col-md-6 position-relative">
-                            <label class="form-label" for="state">State</label>
-                            <select class="form-select" id="state" name="state" required>
-                              <option selected disabled value="">Choose...</option>
-                              <option>Gujarat</option>
-                              <option>Maharashtra</option>
-                              <option>California</option>
-                              <option>Bangkok</option>
-                            </select>
-                            <div class="invalid-tooltip">Please select a state.</div>
-                          </div>
-                      
-                          <!-- City -->
-                          <div class="col-md-6 position-relative">
-                            <label class="form-label" for="city">City</label>
-                            <select class="form-select" id="city" name="city" required>
-                              <option selected disabled value="">Choose...</option>
-                              <option>Morbi</option>
-                              <option>Mumbai</option>
-                              <option>Los Angeles</option>
-                              <option>Bangkok City</option>
-                            </select>
-                            <div class="invalid-tooltip">Please select a city.</div>
-                          </div>
+                          <div class="col-md-6">
+                          <label class="form-label">Select Country </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="us">United States</option>
+                            <option value="in">India</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="it">Italy</option>
+                            <option value="jp">Japan</option>
+                            <option value="br">Brazil</option>
+                            <option value="za">South Africa</option>
+                            <option value="cn">China</option>
+                            <option value="ru">Russia</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="ar">Argentina</option>
+                            <option value="mx">Mexico</option>
+                            <option value="es">Spain</option>
+                            <option value="kr">South Korea</option>
+                            <option value="se">Sweden</option>
+                            <option value="nl">Netherlands</option>
+                          </select>
+                      </div>
+
+                      <div class="col-md-6">
+                          <label class="form-label">Select State </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="mh">Maharashtra</option>
+                            <option value="gj">Gujarat</option>
+                            <option value="dl">Delhi</option>
+                            <option value="ka">Karnataka</option>
+                            <option value="tn">Tamil Nadu</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="wb">West Bengal</option>
+                            <option value="ap">Andhra Pradesh</option>
+                            <option value="rj">Rajasthan</option>
+                            <option value="pb">Punjab</option>
+                            <option value="br">Bihar</option>
+                            <option value="mp">Madhya Pradesh</option>
+                            <option value="od">Odisha</option>
+                            <option value="hr">Haryana</option>
+                            <option value="jk">Jammu & Kashmir</option>
+                            <option value="kl">Kerala</option>
+                            <option value="as">Assam</option>
+                            <option value="jh">Jharkhand</option>
+                            <option value="cg">Chhattisgarh</option>
+                            <option value="ut">Uttarakhand</option>
+                          </select>
+                      </div>
+
+                       <div class="col-md-6">
+                          <label class="form-label">Select City </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="mumbai">Mumbai</option>
+                             <option value="delhi">Delhi</option>
+                             <option value="bangalore">Bangalore</option>
+                             <option value="ahmedabad">Ahmedabad</option>
+                             <option value="chennai">Chennai</option>
+                             <option value="kolkata">Kolkata</option>
+                             <option value="pune">Pune</option>
+                             <option value="surat">Surat</option>
+                             <option value="hyderabad">Hyderabad</option>
+                             <option value="jaipur">Jaipur</option>
+                             <option value="indore">Indore</option>
+                             <option value="lucknow">Lucknow</option>
+                             <option value="bhopal">Bhopal</option>
+                             <option value="patna">Patna</option>
+                             <option value="vadodara">Vadodara</option>
+                             <option value="rajkot">Rajkot</option>
+                             <option value="amritsar">Amritsar</option>
+                             <option value="coimbatore">Coimbatore</option>
+                             <option value="nashik">Nashik</option>
+                             <option value="kanpur">Kanpur</option>
+                          </select>
+                      </div>
+
                       
                           <!-- Zip Code -->
                           <div class="col-md-6 position-relative">
@@ -379,5 +430,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
+     <script src="./assets/js/select2.full.min.js"></script>
+    <script src="./assets/js/select2-init.js"></script>
   </body>
 </html>

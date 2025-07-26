@@ -42,6 +42,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./assets/css/select2.min.css">
+    
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body> 
@@ -252,15 +254,20 @@
                               </li>
                             </ul>                          
                             <!-- Dropdown (Right Side) -->
-                             <div class="col-md-4 position-relative mt-3">
-                        <label class="form-label" for="validationTooltip04">Select Distributer</label>
-                        <select class="form-select" id="validationTooltip04" required="">
-                          <option selected="" disabled="" value="">Choose...</option>
-                          <option>AutoZone Pvt. Ltd</option>
-                          <option>LuxVibe Interiors </option>
-                        </select>
+                           
+                          <div class="col-md-4">
+                          <label class="form-label text-dark">Select Distributer </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="au">AutoLuxe Industries</option>
+                            <option value="tu">TurboRide Interiors</option>
+                            <option value="ve">Velocity AutoStyle</option>
+                            <option value="ne">NexonDrive Co.</option>
+                            <option value="ur">UrbanCruze AutoTech</option>
+                            <option value="mo">MotoElite Works</option>
+                            <option value="re">Revotec Car Designs</option>
+                          </select>
                       </div>
-                          
                           </div>
                         </div>
 
@@ -515,5 +522,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
+     <script src="./assets/js/select2.full.min.js"></script>
+    <script src="./assets/js/select2-init.js"></script>
   </body>
 </html>

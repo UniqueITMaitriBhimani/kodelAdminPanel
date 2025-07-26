@@ -48,6 +48,7 @@
 
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/quill.snow.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/quill.bubble.css">
+    <link rel="stylesheet" href="./assets/css/select2.min.css">
     <!-- Plugins css Ends-->
 
 </head>
@@ -253,20 +254,85 @@
                         <input class="form-control" id="validationTooltipAddress" type="text"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipCountry">Country</label>
-                        <input class="form-control" id="validationTooltipCountry" type="text" required="">
-                        <div class="invalid-tooltip">Please provide a valid Country.</div>
+                      <div class="col-md-6">
+                          <label class="form-label">Select Country </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="us">United States</option>
+                            <option value="in">India</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="fr">France</option>
+                            <option value="it">Italy</option>
+                            <option value="jp">Japan</option>
+                            <option value="br">Brazil</option>
+                            <option value="za">South Africa</option>
+                            <option value="cn">China</option>
+                            <option value="ru">Russia</option>
+                            <option value="ng">Nigeria</option>
+                            <option value="ar">Argentina</option>
+                            <option value="mx">Mexico</option>
+                            <option value="es">Spain</option>
+                            <option value="kr">South Korea</option>
+                            <option value="se">Sweden</option>
+                            <option value="nl">Netherlands</option>
+                          </select>
                       </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipState">State</label>
-                        <input class="form-control" id="validationTooltipState" type="text" required="">
-                        <div class="invalid-tooltip">Please provide a valid State.</div>
+
+                      <div class="col-md-6">
+                          <label class="form-label">Select State </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="mh">Maharashtra</option>
+                            <option value="gj">Gujarat</option>
+                            <option value="dl">Delhi</option>
+                            <option value="ka">Karnataka</option>
+                            <option value="tn">Tamil Nadu</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="wb">West Bengal</option>
+                            <option value="ap">Andhra Pradesh</option>
+                            <option value="rj">Rajasthan</option>
+                            <option value="pb">Punjab</option>
+                            <option value="br">Bihar</option>
+                            <option value="mp">Madhya Pradesh</option>
+                            <option value="od">Odisha</option>
+                            <option value="hr">Haryana</option>
+                            <option value="jk">Jammu & Kashmir</option>
+                            <option value="kl">Kerala</option>
+                            <option value="as">Assam</option>
+                            <option value="jh">Jharkhand</option>
+                            <option value="cg">Chhattisgarh</option>
+                            <option value="ut">Uttarakhand</option>
+                          </select>
                       </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipCity">City</label>
-                        <input class="form-control" id="validationTooltipCity" type="text" required="">
-                        <div class="invalid-tooltip">Please provide a valid City.</div>
+
+                       <div class="col-md-6">
+                          <label class="form-label">Select City </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="mumbai">Mumbai</option>
+                             <option value="delhi">Delhi</option>
+                             <option value="bangalore">Bangalore</option>
+                             <option value="ahmedabad">Ahmedabad</option>
+                             <option value="chennai">Chennai</option>
+                             <option value="kolkata">Kolkata</option>
+                             <option value="pune">Pune</option>
+                             <option value="surat">Surat</option>
+                             <option value="hyderabad">Hyderabad</option>
+                             <option value="jaipur">Jaipur</option>
+                             <option value="indore">Indore</option>
+                             <option value="lucknow">Lucknow</option>
+                             <option value="bhopal">Bhopal</option>
+                             <option value="patna">Patna</option>
+                             <option value="vadodara">Vadodara</option>
+                             <option value="rajkot">Rajkot</option>
+                             <option value="amritsar">Amritsar</option>
+                             <option value="coimbatore">Coimbatore</option>
+                             <option value="nashik">Nashik</option>
+                             <option value="kanpur">Kanpur</option>
+                          </select>
                       </div>
                       <div class="col-md-6 position-relative">
                         <label class="form-label" for="validationTooltipPincode">Pincode</label>
@@ -377,6 +443,8 @@
     <script src="./assets/js/theme-customizer/customizer.js"></script>
     <script src="../assets/js/editors/quill.js"></script>
     <script src="../assets/js/custom-add-product3.js"></script>
+         <script src="./assets/js/select2.full.min.js"></script>
+    <script src="./assets/js/select2-init.js"></script>
 
   </body>
 </html>

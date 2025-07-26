@@ -42,6 +42,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./assets/css/select2.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -219,16 +220,20 @@
                     <div class="col-sm-12">
                       <div class="card bg-light">
                         <div class="card-body d-flex justify-content-center">
-                          <div class="col-md-4 position-relative mb-3">
-                       <label class="form-label text-dark fw-bold" for="validationTooltip04">Select Items</label>
-                       <select class="form-select" id="validationTooltip04" required="">
-                         <option selected="" disabled="" value="">Choose...</option>
-                         <option>AutoZone Pvt. Ltd</option>
-                         <option>LuxVibe Interiors </option>
-                         <option>India </option>
-                         <option>U.K</option>
-                       </select>
-                   </div>
+                      
+                   <div class="col-md-4">
+                          <label class="form-label text-dark">Select Item </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="ec">ECO SCODA COVENTRY</option>
+                            <option value="ev">EVERGREEN LEATHER</option>
+                            <option value="lu">LUXURIUS COLLECTION</option>
+                            <option value="ma">MAGNUM COLLECTION</option>
+                            <option value="ne">NEXA LEATHER</option>
+                            <option value="sty">STYRISH LEATHER COLLECTION</option>
+                            <option value="vo">VOLVO VISENZA</option>
+                          </select>
+                      </div>
                   </div>
                 </div>
               </div>  
@@ -494,5 +499,7 @@
     <script src="./assets/js/theme-customizer/customizer.js"></script>
         <!-- SweetAlert2 CDN -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="./assets/js/select2.full.min.js"></script>
+    <script src="./assets/js/select2-init.js"></script>
   </body>
 </html> 

@@ -42,6 +42,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./assets/css/select2.min.css">
+    
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body> 
@@ -221,18 +223,18 @@
                 <div class="card">
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
-                        <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipVendor">Vendor</label>
-                        <select class="form-select" id="validationTooltipVendor" required="">
-                          <option selected="" disabled="" value="">Select...</option>
-                          <option>Acme Corp</option>
-                          <option>Globex Industries</option>
-                          <option>InnovaTech Ltd.</option>
-                          <option>Future Solutions</option>
-                          <option>Nova Systems</option>
-                          <option>Skyline Ventures</option>
-                        </select>
-                        <div class="invalid-tooltip">Please select a valid state.</div>
+                      <div class="col-md-6">
+                          <label class="form-label text-dark">Select Vendor </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="ac">Acme Corp</option>
+                            <option value="ev">EVERGREEN LEATHER</option>
+                            <option value="lu">LUXURIUS COLLECTION</option>
+                            <option value="ma">MAGNUM COLLECTION</option>
+                            <option value="ne">NEXA LEATHER</option>
+                            <option value="sty">STYRISH LEATHER COLLECTION</option>
+                            <option value="vo">VOLVO VISENZA</option>
+                          </select>
                       </div>
                       <div class="col-md-6 position-relative">
                         <label class="form-label" for="validationTooltipContact">Contact No</label>
@@ -269,27 +271,27 @@
                   </div>
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
-                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipItem">Item</label>
-                        <select class="form-select" id="validationTooltipItem" required="">
-                          <option selected="" disabled="" value="">Select...</option>
-                          <option>STYRISH LEATHER COLLECTION</option>
-                          <option>LUXURIUS COLLECTION</option>
-                          <option>SUPER NAPPA</option>
-                          <option>NEXA LEATHER</option>
-                        </select>
-                        <div class="invalid-tooltip">Please select a valid Item.</div>
+                       <div class="col-md-6">
+                          <label class="form-label text-dark">Select Item </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="ec">ECO SCODA COVENTRY</option>
+                            <option value="ev">EVERGREEN LEATHER</option>
+                            <option value="lu">LUXURIUS COLLECTION</option>
+                            <option value="ma">MAGNUM COLLECTION</option>
+                            <option value="ne">NEXA LEATHER</option>
+                            <option value="sty">STYRISH LEATHER COLLECTION</option>
+                            <option value="vo">VOLVO VISENZA</option>
+                          </select>
                       </div>
-                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipProduct">Color</label>
-                        <select class="form-select" id="validationTooltipProduct" required="">
-                          <option selected="" disabled="" value="">Select...</option>
-                          <option>FAWN FLEECE</option>
-                          <option>NONEWOVEN 135</option>
-                          <option>WHITE FLEECE</option>
-                          <option>Loopkite Peach colour</option>
-                        </select>
-                        <div class="invalid-tooltip">Please select a valid Color.</div>
+                       <div class="col-md-6">
+                          <label class="form-label text-dark">Select Color </label>
+                          <select class="single-select">
+                            <option selected disabled value="">Choose...</option>
+                            <option value="ro">Rose Taupe</option>
+                            <option value="be">	Beige Sandstone</option>
+                            <option value="gr">Graphite Grey</option>
+                          </select>
                       </div>
                       <div class="col-md-6 position-relative">
                         <label class="form-label" for="validationTooltipcProductWithoutTaxMtr">Product Without Tax / Mtr</label>
@@ -356,7 +358,7 @@
                           <td>200 Mtr</td>
                           <td>
                             <a href="#" 
-                               class="text-danger btn btn-sm btn-outline-danger me-1 deleteItem" 
+                               class="btn btn-sm btn-soft-danger deleteItem me-1" 
                                data-bs-toggle="tooltip" 
                                title="Delete">
                               <i class="fas fa-trash-alt"></i>
@@ -427,5 +429,7 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
+     <script src="./assets/js/select2.full.min.js"></script>
+    <script src="./assets/js/select2-init.js"></script>
   </body>
 </html>

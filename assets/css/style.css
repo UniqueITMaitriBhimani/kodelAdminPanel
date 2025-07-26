@@ -23495,7 +23495,7 @@ p.data-attributes svg {
   }
 }
 .contact-editform .select2-container .select2-selection--single {
-  height: 39px !important;
+  height: 32px !important;
   border-color: #ced4da !important;
 }
 
@@ -31140,8 +31140,8 @@ p.data-attributes svg {
 
 .select2-container .select2-selection--single {
   border-radius: 0.25rem !important;
-  border-color: #efefef;
-  height: 47px !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  height: 37px !important;
   padding: 10px;
 }
 
@@ -54949,7 +54949,7 @@ span.twitter-typeahead .tt-suggestion.active, span.twitter-typeahead .tt-suggest
   z-index: 2;
 }
 .dropdown-menu .dropdown-item {
-  color: #2b2b2b;
+  /* color: #2b2b2b; */
   /* opacity: 0.6; */
   font-size: 13px;
   padding: 6px 12px;
@@ -63770,3 +63770,155 @@ body[class*=dark-] .for-light {
 	4.1. Dark CSS ends
 ==========================**/
 /*# sourceMappingURL=style.css.map */
+/*======================================== bootstrap colo style ========================================= */
+.btn-soft-primary {
+  background-color: #e0ecff !important;
+  color: #0056b3 !important;
+}
+.btn-soft-primary:hover {
+  background-color: #c0d8ff !important;
+  color: #003f88 !important;
+}
+
+.btn-soft-info {
+  background-color: #d6f3ff !important;
+  color: #0d6efd !important;
+}
+.btn-soft-info:hover {
+  background-color: #b8eaff !important;
+  color: #0a58ca !important;
+}
+
+.btn-soft-danger {
+  background-color: #ffe5e5 !important;
+  color: #dc3545 !important;
+}
+.btn-soft-danger:hover {
+  background-color: #ffc9c9 !important;
+  color: #bb2d3b !important;
+}
+
+.btn-soft-success {
+  background-color: #d9fce3 !important;
+  color: #198754 !important;
+}
+.btn-soft-success:hover {
+  background-color: #baf2cc !important;
+  color: #146c43 !important;
+}
+
+.btn-soft-warning {
+  background-color: #fff3cd !important;
+  color: #856404 !important;
+}
+.btn-soft-warning:hover {
+  background-color: #ffe69c !important;
+  color: #664d03 !important;
+}
+
+.btn-soft-secondary {
+  background-color: #f0f0f0 !important;
+  color: #6c757d !important;
+}
+.btn-soft-secondary:hover {
+  background-color: #dedede !important;
+  color: #5a6268 !important;
+}
+
+.btn-soft-teal {
+  background-color: #d0f0ec !important;
+  color: #20c997 !important;
+}
+.btn-soft-teal:hover {
+  background-color: #b2e6dc !important;
+  color: #128f76 !important;
+}
+
+.btn-soft-dark {
+  background-color: #eeeeee !important;
+  color: #343a40 !important;
+}
+.btn-soft-dark:hover {
+  background-color: #d6d6d6 !important;
+  color: #212529 !important;
+}
+.text-indigo{
+  color: #6610f2 !important;
+}
+.text-indigo:hover{
+  background-color: #e0cdff !important;
+}
+.text-danger-delete{
+  color: #dc3545 !important;
+}
+.text-danger-delete:hover{
+  background-color: #ffd8dc !important;
+}
+.btn-soft-indigo {
+  background-color: #e6e6ff !important;
+  color: #6610f2 !important;
+}
+.btn-soft-indigo:hover {
+  background-color: #d1d1ff !important;
+  color: #520dc2 !important;
+}
+.bg-transparent{
+  background-color: transparent !important;
+}
+.btn-flat-blue {
+  background-color: transparent !important;  /* Vivid blue */
+  color: #1e88e5 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.btn-flat-blue:hover {
+  background-color: #1669c1 !important;  /* Darker on hover */
+  color: #fff !important;
+}
+.btn-flat-green {
+  background-color: transparent !important;  /* Medium green */
+  color: #43a047 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.text-success-price{
+  color: #198754 !important;
+}
+.text-success-price:hover{
+  background-color: #d9fce3 !important;
+}
+.text-info{
+  color: rgb(13 202 240);
+}
+.text-info:hover{
+  color: rgb(13 202 240);
+  background-color: #d0f7ff !important;
+}
+.text-warning-credit{
+  color: #ffa800 !important;
+}
+.text-warning-credit:hover{
+  color: #ffa800 !important;
+  background-color: #ffeac1 !important;
+}
+.btn-flat-green:hover {
+  background-color: #2e7d32 !important;  /* Darker green on hover */
+  color: #fff !important;
+}
+.btn-flat-yellow {
+  background-color: #fff9de !important;  /* Bright Yellow */
+  color: #ffd000 !important;                /* Black text for contrast */
+  border: none !important;
+  box-shadow: none !important;
+  transition: 0.2s ease-in-out !important;
+  border-radius: 6px !important;
+  padding: 8px 15px !important;
+}
+
+.btn-flat-yellow:hover {
+  background-color: #fbc02d !important;  /* Slightly darker yellow on hover */
+  color: #fff !important;
+}
+
