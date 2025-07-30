@@ -134,12 +134,12 @@
                 </svg>
               </div>
             </div>
-            <div class="logo-icon-wrapper"><a href="index.html"><img class="img-fluid for-light" src="./assets/images/logo/logo-icon.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo-icon-dark.png" alt=""></a></div>
+            <div class="logo-icon-wrapper"><a href="index.html"><img class="for-light" width="30" src="./assets/images/logo/favicon.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo-icon-dark.png" alt=""></a></div>
             <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
-                  <li class="back-btn"><a href="index.html"><img class="img-fluid" src="./assets/images/logo/logo-icon.png" alt=""></a>
+                  <li class="back-btn"><a href="index.html"><img class="img-fluid" src="./assets/images/logo/favicon.png" alt=""></a>
                     <div class="mobile-back text-end"><span>Back</span><i class="fa-solid fa-angle-right ps-2" aria-hidden="true"></i></div>
                   </li>
                   <li class="pin-title sidebar-main-title">
@@ -147,27 +147,23 @@
                       <h6>Pinned</h6>
                     </div>
                   </li>
-                  <li class="sidebar-main-title">
-                    <div>
-                      <h6 class="lan-1">General</h6>
-                    </div>
-                  </li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="index.html">
+                  
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="index.html">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#home"></use>
                       </svg><span>Dashboard</span></a></li>
                   
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="items-list.html">
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="items-list.html">
                       <svg> 
                         <use href="./assets/svg/icon-sprite.svg#widgets"></use>
                       </svg><span class="lan-6">Item Management</span></a>
                   </li>
                   
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="list-distributor-management.html">
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="list-distributor-management.html">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#project"></use>
                       </svg><span>Distributor Management</span></a></li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg>
                         <use href="./assets/svg/icon-sprite.svg#buy"></use>
                       </svg><span>Order Management</span></a>
@@ -180,7 +176,7 @@
                       <li><a href="Cancel-order.html">Cancel Order</a></li>
                     </ul>
                   </li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title" href="#">
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#">
                      <svg>
                         <use href="./assets/svg/icon-sprite.svg#money"></use>
                       </svg> 
@@ -191,11 +187,11 @@
                       <li><a href="Invoice-List.html">Invoice List</a></li>
                     </ul>
                   </li>
-                 <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
+                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
                       <svg>
                         <use href="../assets/svg/icon-sprite.svg#learning"></use>
                       </svg><span>Stock Management</span></a></li>
-                  <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link sidebar-title link-nav" href="list-team-management.html">
+                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="list-team-management.html">
                       <svg>
                         <use href="./assets/svg/icon-sprite.svg#user"></use>
                       </svg><span>Team Management</span></a></li>
@@ -220,7 +216,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-12">
-                <div class="card">
+                <div class="card shadow">
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
                       <div class="col-md-6">
@@ -241,12 +237,12 @@
                         <input class="form-control" id="validationTooltipContact" type="text"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
-                      <div class="col-md-6 position-relative">
+                      <div class="col-md-6 position-relative mt-0">
                         <label class="form-label" for="validationTooltipGST">GST</label>
                         <input class="form-control" id="validationTooltipGST" type="text"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
-                      <div class="col-md-6 position-relative">
+                      <div class="col-md-6 position-relative mt-0">
                         <label class="form-label" for="validationTooltipcolorname">Purchase Bill</label>
                         <input class="form-control digits" type="date" value="2018-01-15">
                         <div class="valid-tooltip">Looks good!</div>
@@ -266,9 +262,7 @@
               </div>
               <div class="col-sm-12">
                 <h5 class="mb-2">Select Color</h5>
-                <div class="card">
-                  <div class="card-header">
-                  </div>
+                <div class="card shadow">
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
                        <div class="col-md-6">
@@ -293,12 +287,12 @@
                             <option value="gr">Graphite Grey</option>
                           </select>
                       </div>
-                      <div class="col-md-6 position-relative">
+                      <div class="col-md-6 position-relative mt-0">
                         <label class="form-label" for="validationTooltipcProductWithoutTaxMtr">Product Without Tax / Mtr</label>
                         <input class="form-control" id="validationTooltipcProductWithoutTaxMtr" type="number"  required="">
                         <div class="valid-tooltip">Looks good!</div>
                       </div>
-                      <div class="col-md-6 position-relative">
+                      <div class="col-md-6 position-relative mt-0">
                         <label class="form-label" for="validationTooltipcProductWithoutTaxRoll">Product Without Tax / Roll</label>
                         <input class="form-control" id="validationTooltipcProductWithoutTaxRoll" type="number"  required="">
                         <div class="valid-tooltip">Looks good!</div>
@@ -330,7 +324,7 @@
                   </div>
                   
                     <div class="col-sm-12 px-2 mt-3">
-                <div class="card">
+                <div class="card shadow">
                   <div class="table-responsive custom-scrollbar">
                     <table class="table border-bottom-table">
                       <thead>
@@ -369,11 +363,12 @@
                     </table>
                   </div>
                 </div>
+                <div class="col-md-12 d-flex justify-content-center align-items-end mb-3">
+                  <button class="btn btn-success-gradien" type="submit">Save</button>
+                </div>
               </div>
                 </div>
-                <div class="col-md-12 d-flex justify-content-center align-items-end mb-3">
-                  <button class="btn btn-primary" type="submit">Save</button>
-                </div>
+                
               </div>  
             </div>
             

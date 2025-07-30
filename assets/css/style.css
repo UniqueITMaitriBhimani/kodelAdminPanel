@@ -8548,7 +8548,7 @@ button.button-primary:hover {
     2.10 Card CSS Start
 ==========================**/
 .card {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid var(--sidebar-border);
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
@@ -27350,7 +27350,7 @@ p.data-attributes svg {
 .product-box {
   border-radius: 10px;
   overflow: hidden;
-  height: 300px;
+  height: 280px;
 }
 .product-box-height{
   height: 260px !important;
@@ -27442,6 +27442,8 @@ p.data-attributes svg {
 .product-img img{
       height: 100%;
     width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
 }
 .product-box .product-img .product-hover {
   position: absolute;
@@ -44540,7 +44542,7 @@ table.table-bordered thead tr th p {
   z-index: 8;
   transition: 0.5s;
   background-color: #fff;
-  box-shadow: 0px 4px 40px rgba(89, 102, 122, 0.1);
+  box-shadow: 0px 4px 40px rgba(89, 102, 122, 0.3);
 }
 .page-wrapper .page-header .header-wrapper {
   width: 100%;
@@ -44795,7 +44797,7 @@ table.table-bordered thead tr th p {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(89, 102, 122, 0.1);
+  box-shadow: 0 0 20px rgba(89, 102, 122, 0.4);
   width: 300px;
   height: 260px;
 }
@@ -45552,7 +45554,7 @@ table.table-bordered thead tr th p {
   width: 265px;
   text-align: left;
   transition: 0.3s;
-  box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.1);
+  box-shadow: 0 0 21px 0 rgba(89, 102, 122, 0.3);
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper,
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-icon-wrapper {
@@ -63922,3 +63924,12 @@ body[class*=dark-] .for-light {
   color: #fff !important;
 }
 
+.mt-100{
+  margin-top: 110px;
+}
+.fs-15{
+  font-size: 15px !important;
+}
+.border-dark {
+    border-color: #1C1B20 !important;
+}

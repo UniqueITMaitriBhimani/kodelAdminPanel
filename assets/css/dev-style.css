@@ -347,6 +347,7 @@
             padding: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             margin-bottom: 10px;
+            height: 100%;
         }
         
         .view-distributor-price-section-title {
@@ -418,6 +419,7 @@
             border-radius: 15px;
             padding: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            height: 100%;
         }
         .view-distributor-price-product-image-container img{
           width: 200px;
@@ -518,7 +520,7 @@
             font-size: 0.9rem;
         }
         .logo-wrapper img{
-          width: 70%;
+          width: 40%;
         }
 
         @keyframes float {
@@ -535,9 +537,165 @@
     background-color: #e6f0ff !important;
 }
 .select2-container--default .select2-selection--single {
-  background-color: #f8f9fa; /* same as .bg-light-secondary */
+  background-color: #f8f9fa; 
   height: 38px;
   padding: 5px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
+
+input[type="radio"].paid:checked {
+  background-color: #8DD4B4 !important;
+  border-color: #8DD4B4 !important;
+  box-shadow: 0 0 0 0.25rem rgba(141, 212, 180, 0.4);
+}
+
+input[type="radio"].partialRadio:checked {
+  background-color: #C5AFF6 !important;
+  border-color: #C5AFF6 !important;
+  box-shadow: 0 0 0 0.25rem rgba(197, 175, 246, 0.4);
+}
+.fs-10{
+  font-size: 9px !important;
+}
+        .view-invoices-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.view-invoices-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-invoices-card-1 {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.view-invoices-card-2 {
+  background: #f0fdfa;
+  border-color: #a7f3d0;
+}
+
+.view-invoices-card-3 {
+  background: #fffbef;
+  border-color: #fde68a;
+}
+
+.view-invoices-card-4 {
+  background: #fdf2f8;
+  border-color: #f9a8d4;
+}
+
+.view-invoices-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.view-invoices-card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.view-invoices-card-1 .view-invoices-card-icon { background: #f87171; }
+.view-invoices-card-2 .view-invoices-card-icon { background: #34d399; }
+.view-invoices-card-3 .view-invoices-card-icon { background: #fbbf24; }
+.view-invoices-card-4 .view-invoices-card-icon { background: #f472b6; }
+
+.view-invoices-card-title {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.view-invoices-card-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.view-invoices-buttons-container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.view-invoices-btn-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #1A70B4;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.view-invoices-btn-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.view-invoices-btn-link:hover::before {
+  left: 100%;
+}
+
+.view-invoices-btn-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+  color: #fff;
+}
+
+.view-invoices-btn-secondary {
+  border: 1px solid #1A70B4;
+  background-color: transparent !important;
+  color: #1A70B4;
+  box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+}
+
+.view-invoices-btn-secondary:hover {
+  box-shadow: 0 15px 40px rgba(168, 237, 234, 0.4);
+  color: #1A70B4;
+}
+
+@media (max-width: 768px) {
+  .view-invoices-buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view-invoices-btn-link {
+    width: 200px;
+    text-align: center;
+  }
+}
+
