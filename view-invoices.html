@@ -265,9 +265,10 @@
                       </div>                    
                     </div>
                     <div class="view-invoices-buttons-container mt-4 ms-3">
-                        <a href="#make-payment" class="view-invoices-btn-link">Outstanding Invoice</a>
-                        <a href="#view-details" class="view-invoices-btn-link view-invoices-btn-secondary">All Invoice</a>
-                      </div>
+                      <a href="#" id="btnOutstanding" class="view-invoices-btn-link view-invoices-btn-secondary">Outstanding Invoice</a>
+                      <a href="#" id="btnAllInvoice" class="view-invoices-btn-link ">All Invoice</a>
+                    </div>
+
                 <div class="table-responsive custom-scrollbar mt-3">
                   <table class="table border-bottom-table">
                     <thead>
@@ -280,7 +281,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr data-status="Pending">
                         <td>INV-2025-001</td>
                         <td>2025-07-25</td>
                         <td>$450.00</td>
@@ -291,7 +292,7 @@
                           </button>
                         </td>
                       </tr>
-                      <tr>
+                      <tr data-status="Paid">
                            <td>INV-2025-002</td>
                            <td>2025-07-24</td>
                            <td>$780.00</td>
@@ -302,7 +303,7 @@
                              </button>
                            </td>
                          </tr>
-                         <tr>
+                         <tr data-status="Partially">
                            <td>INV-2025-003</td>
                            <td>2025-07-22</td>
                            <td>$1,200.00</td>
@@ -313,7 +314,7 @@
                              </button>
                            </td>
                          </tr>
-                         <tr>
+                         <tr data-status="Pending">
                            <td>INV-2025-004</td>
                            <td>2025-07-20</td>
                            <td>$95.00</td>
@@ -324,7 +325,7 @@
                              </button>
                            </td>
                          </tr>
-                         <tr>
+                         <tr data-status="Paid">
                            <td>INV-2025-005</td>
                            <td>2025-07-18</td>
                            <td>$320.00</td>
@@ -480,6 +481,37 @@
       </div>
     </div>
   </div>
+
+<script>
+  const btnOutstanding = document.getElementById("btnOutstanding");
+  const btnAllInvoice = document.getElementById("btnAllInvoice");
+  const rows = document.querySelectorAll("tbody tr");
+
+  function setActive(btnToActivate, btnToDeactivate) {
+    btnToActivate.classList.remove("view-invoices-btn-secondary");
+    btnToDeactivate.classList.add("view-invoices-btn-secondary");
+  }
+
+  btnOutstanding.addEventListener("click", function (e) {
+    e.preventDefault();
+    // Filter: show only 'Partially'
+    rows.forEach(row => {
+      row.style.display = row.getAttribute("data-status") === "Partially" ? "" : "none";
+    });
+    setActive(btnOutstanding, btnAllInvoice);
+  });
+
+  btnAllInvoice.addEventListener("click", function (e) {
+    e.preventDefault();
+    // Show all rows
+    rows.forEach(row => {
+      row.style.display = "";
+    });
+    setActive(btnAllInvoice, btnOutstanding);
+  });
+</script>
+
+
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const partialRadio = document.getElementById("partialRadio");
