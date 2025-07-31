@@ -9,10 +9,10 @@
   function toggleFullScreen() {
     if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
       // Entering fullscreen
-      svgIcon.setAttribute("href", "../assets/svg/icon-sprite.svg#full-screen");
+      svgIcon.setAttribute("href", "./assets/svg/icon-sprite.svg#full-screen");
     } else {
       // Exiting fullscreen
-      svgIcon.setAttribute("href", "../assets/svg/icon-sprite.svg#full-screen");
+      svgIcon.setAttribute("href", "./assets/svg/icon-sprite.svg#full-screen");
     }
 
     if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {

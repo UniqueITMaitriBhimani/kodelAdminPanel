@@ -2166,8 +2166,12 @@ svg.f-light {
 }
 
 .bg-danger {
-  background-color: #EB8A93 !important;
+  background-color: #dc3545 !important;
   color: #fff;
+}
+.bg-successs{
+  background-color: #198754;
+  color: #fff;  
 }
 .bg-danger:hover {
   background-color: #EB8A93;

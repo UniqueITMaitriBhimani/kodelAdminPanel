@@ -545,28 +545,25 @@
 }
 
 input[type="radio"].paid:checked {
-  background-color: #8DD4B4 !important;
-  border-color: #8DD4B4 !important;
-  box-shadow: 0 0 0 0.25rem rgba(141, 212, 180, 0.4);
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+  box-shadow: 0 0 0 0.25rem rgba(141, 212, 167, 0.4);
 }
 
 input[type="radio"].partialRadio:checked {
-  background-color: #C5AFF6 !important;
-  border-color: #C5AFF6 !important;
-  box-shadow: 0 0 0 0.25rem rgba(197, 175, 246, 0.4);
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.25rem rgba(246, 175, 187, 0.4);
 }
 .fs-10{
   font-size: 9px !important;
 }
-        .view-invoices-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .view-invoices-card {
   background: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
@@ -606,7 +603,7 @@ input[type="radio"].partialRadio:checked {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 20px;
   color: white;
 }
@@ -617,9 +614,8 @@ input[type="radio"].partialRadio:checked {
 .view-invoices-card-4 .view-invoices-card-icon { background: #f472b6; }
 
 .view-invoices-card-title {
-  font-size: 1rem;
+  font-size: 12px;
   color: #666;
-  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -629,7 +625,7 @@ input[type="radio"].partialRadio:checked {
   font-size: 1.5rem;
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .view-invoices-buttons-container {
@@ -641,13 +637,13 @@ input[type="radio"].partialRadio:checked {
 
 .view-invoices-btn-link {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 13px;
   background: #1A70B4;
   color: white;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 12px;
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
   position: relative;
@@ -699,3 +695,6 @@ input[type="radio"].partialRadio:checked {
   }
 }
 
+.fs-13{
+  font-size: 13px !important;
+}

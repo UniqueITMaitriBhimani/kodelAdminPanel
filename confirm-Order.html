@@ -187,7 +187,7 @@
                   </li>
                  <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
                       <svg>
-                        <use href="../assets/svg/icon-sprite.svg#learning"></use>
+                        <use href="./assets/svg/icon-sprite.svg#learning"></use>
                       </svg><span>Stock Management</span></a></li>
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="list-team-management.html">
                       <svg>
@@ -203,7 +203,7 @@
         <div class="page-body">
           <!-- Container-fluid starts-->
             <div class="container-fluid">
-             <div class="row">
+             <div class="row mt-100">
               <!-- Filter Button Start -->
                 <div class="col-lg-12 d-flex justify-content-start ms-md-auto mb-3">
                   <button class="btn btn-primary btn-lg d-flex px-3 py-0" type="button" id="filter-button">
@@ -249,30 +249,36 @@
             </div>
           </div>
            <div class="container-fluid basic_table">
-            <div class="row mt-100">
+            <div class="row ">
               <div class="col-md-6">
-                <h3>Manage Confirmed Orders</h3>
-              </div>
+              <h3>Manage Confirmed Orders</h3>
+            </div>
               <div class="col-md-6">
-                <div class="feature-products">
+              <div class="feature-products">
                 <div class="common-f-start justify-content-md-end mb-3">
                   <div class="job-filter me-2">
                     <div class="faq-form">
-                     <input class="form-control border-dark" type="text" placeholder="Search..">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon"><circle   cx="11" cy="11" r="8"></circle><line x1="21" y1="21"   x2="16.65" y2="16.65"></line></svg>
+                      <input class="form-control border-dark" type="text" placeholder="Search..">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      </svg>
                     </div>
                   </div>
+                  <a class="btn btn-primary f-w-500" href="#">
+                    <i class="fas fa-truck pe-2"></i>Dispatch
+                  </a>
                 </div>
               </div>
-              </div>
+            </div>
               <div class="col-xl-12 col-lg-7 box-col-6">
                 <div class="card shadow">
                   <div class="card-body px-0 py-0 ">
                     <div class="table-responsive custom-scrollbar"> 
-                      <table class="table" >
+                      <table class="table" id="main-recent-order">
                         <thead> 
                           <tr>
-                            
+                            <th></th>
                             <th>No</th>
                              <th>Order Number</th>
                              <th>Distributer</th>
@@ -283,7 +289,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                          
+                          <th></th>
                           <td>1</td>
                           <td>ORD-10525</td>
                           <td>Orbit Tiles Pvt. Ltd.</td>
@@ -309,7 +315,7 @@
                           </td>
                         </tr>
                           <tr>
-                          
+                          <th></th>
                           <td>2</td>
                           <td>ORD-10525</td>
                           <td>Orbit Tiles Pvt. Ltd.</td>

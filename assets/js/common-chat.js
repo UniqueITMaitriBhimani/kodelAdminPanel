@@ -6,8 +6,8 @@
 
   const BOT_MSGS = ["Hi, how are you?", "Ohh... I can't understand what you trying to say. Sorry!", "I like to play games... But I don't know how to play!", "Sorry if my answers are not relevant. :))", "I feel sleepy! :("];
 
-  const BOT_IMG = "../assets/images/dashboard/user/13.jpg";
-  const PERSON_IMG = "../assets/images/dashboard-11/user/10.jpg";
+  const BOT_IMG = "./assets/images/dashboard/user/13.jpg";
+  const PERSON_IMG = "./assets/images/dashboard-11/user/10.jpg";
   const BOT_NAME = "Shepherd Doyle";
   const PERSON_NAME = "Alden Barker";
 

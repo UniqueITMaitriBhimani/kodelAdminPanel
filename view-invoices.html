@@ -36,7 +36,7 @@
   <!-- Plugins css Ends-->
   <!-- Bootstrap css-->
   <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/vendors/sweetalert2.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/vendors/sweetalert2.css">
   <!-- App css-->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <link id="color" rel="stylesheet" href="./assets/css/color-1.css" media="screen">
@@ -208,7 +208,7 @@
                 </li>
                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="Stock-Management.html">
                     <svg>
-                      <use href="../assets/svg/icon-sprite.svg#learning"></use>
+                      <use href="./assets/svg/icon-sprite.svg#learning"></use>
                     </svg><span>Stock Management</span></a></li>
                 <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav"
                     href="list-team-management.html">
@@ -232,7 +232,7 @@
 
             <div class="col-sm-12">
               <div class="card shadow">
-                 <div class="view-invoices-container mt-3">
+                 <div class="view-invoices-container p-3">
                       <div class="row">
                         <div class="col-md-3">
                           <div class="view-invoices-card view-invoices-card-1 h-100">
@@ -284,7 +284,7 @@
                         <td>INV-2025-001</td>
                         <td>2025-07-25</td>
                         <td>$450.00</td>
-                        <td><span class="badge bg-warning text-dark">Pending</span></td>
+                        <td><span class="badge bg-danger text-white">Pending</span></td>
                         <td>
                           <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#invoiceModal">
                             <i class="fas fa-ellipsis-v"></i>
@@ -295,7 +295,7 @@
                            <td>INV-2025-002</td>
                            <td>2025-07-24</td>
                            <td>$780.00</td>
-                           <td><span class="badge bg-success">Paid</span></td>
+                           <td><span class="badge bg-successs">Paid</span></td>
                            <td>
                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#invoiceModal">
                                <i class="fas fa-ellipsis-v"></i>
@@ -306,7 +306,7 @@
                            <td>INV-2025-003</td>
                            <td>2025-07-22</td>
                            <td>$1,200.00</td>
-                           <td><span class="badge bg-info text-dark">Partially <br> <small class="text-dark fs-10">₹35,22/-</small></span></td>
+                           <td><span class="badge bg-warning text-dark">Partially <br> <small class="text-dark fs-10">₹35,22/-</small></span></td>
                            <td>
                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#invoiceModal">
                                <i class="fas fa-ellipsis-v"></i>
@@ -317,7 +317,7 @@
                            <td>INV-2025-004</td>
                            <td>2025-07-20</td>
                            <td>$95.00</td>
-                           <td><span class="badge bg-warning text-dark">Pending</span></td>
+                           <td><span class="badge bg-danger text-white">Pending</span></td>
                            <td>
                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#invoiceModal">
                                <i class="fas fa-ellipsis-v"></i>
@@ -328,7 +328,7 @@
                            <td>INV-2025-005</td>
                            <td>2025-07-18</td>
                            <td>$320.00</td>
-                           <td><span class="badge bg-success">Paid</span></td>
+                           <td><span class="badge bg-successs">Paid</span></td>
                            <td>
                              <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#invoiceModal">
                                <i class="fas fa-ellipsis-v"></i>
@@ -401,7 +401,8 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="invoiceModalLabel">Update Invoice Status</h5>
+        <h5 class="modal-title" id="invoiceModalLabel">Update Invoice Status <br><span class="fs-13">Invoice Amount :- ₹ 1350.3/-</span></h5>
+       
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

@@ -32,7 +32,7 @@
           confirmButtonColor: "#16C7F9",
           cancelButtonColor: "#FC4438",
           confirmButtonText: "Yes, delete it!",
-          imageUrl: "../assets/images/gif/trash.gif",
+          imageUrl: "./assets/images/gif/trash.gif",
           imageWidth: 120,
           imageHeight: 120,
         }).then((result) => {

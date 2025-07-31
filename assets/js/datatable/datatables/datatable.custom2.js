@@ -222,7 +222,7 @@
 
   $(document).ready(function () {
     var ct = $("#API-child-row").DataTable({
-      ajax: "../assets/ajax/api.txt",
+      ajax: "./assets/ajax/api.txt",
       columns: [
         {
           className: "details-control",
@@ -267,7 +267,7 @@
   // Data sources tables
   $("#data-source-1").DataTable();
   $("#data-source-2").DataTable({
-    ajax: "../assets/ajax/arrays.txt",
+    ajax: "./assets/ajax/arrays.txt",
   });
   var dataSet = [
     ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],
@@ -316,7 +316,7 @@
     serverSide: true,
     ordering: true,
     searching: true,
-    ajax: "../assets/json/server-side.json",
+    ajax: "./assets/json/server-side.json",
   });
 
   // Row grouping

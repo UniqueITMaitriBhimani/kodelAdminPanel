@@ -820,7 +820,7 @@
     });
     $("#advance-8").DataTable({
       language: {
-        url: "../assets/json/German.json",
+        url: "./assets/json/German.json",
       },
     });
     $("#advance-9").DataTable({
@@ -946,12 +946,12 @@
     //seach API regular expression start
     //Ajax Data Source (Arrays) start
     $("#ajax-data-array").DataTable({
-      ajax: "../assets/ajax/arrays.txt",
+      ajax: "./assets/ajax/arrays.txt",
     });
     //Ajax Data Source (Arrays) start
     //Ajax Data Source (object) start
     $("#ajax-data-object").DataTable({
-      ajax: "../assets/ajax/object.txt",
+      ajax: "./assets/ajax/object.txt",
       columns: [
         {
           data: "name",
@@ -977,7 +977,7 @@
     //Ajax nested object data start
     $("#ajax-data-nested-object").DataTable({
       processing: true,
-      ajax: "../assets/ajax/object_nested.txt",
+      ajax: "./assets/ajax/object_nested.txt",
       columns: [
         {
           data: "name",
@@ -1002,7 +1002,7 @@
     //Ajax nested object data start
     //Ajax orthogonal data start here
     $("#orthogonal-data").DataTable({
-      ajax: "../assets/ajax/orthogonal.txt",
+      ajax: "./assets/ajax/orthogonal.txt",
       columns: [
         {
           data: "name",
@@ -1030,7 +1030,7 @@
     //Ajax orthogonal data end here
     // Ajax Generated content for a column start
     var generatetable = $("#auto-generate-content").DataTable({
-      ajax: "../assets/ajax/arrays.txt",
+      ajax: "./assets/ajax/arrays.txt",
       columnDefs: [
         {
           targets: -1,
@@ -1046,7 +1046,7 @@
     // Ajax Generated content for a column end
     //Ajax render start here
     $("#render-datatable").DataTable({
-      ajax: "../assets/ajax/arrays.txt",
+      ajax: "./assets/ajax/arrays.txt",
       deferRender: true,
     });
     //Ajax render end here
@@ -1054,14 +1054,14 @@
     $("#server-side-datatable").DataTable({
       processing: true,
       serverSide: true,
-      ajax: "../assets/ajax/server-processing.php",
+      ajax: "./assets/ajax/server-processing.php",
     });
     //http server side datatable start
     $("#datatable-http").DataTable({
       processing: true,
       serverSide: true,
       ajax: {
-        url: "../assets/ajax/server-processing.php",
+        url: "./assets/ajax/server-processing.php",
         data: function (d) {
           d.myKey = "myValue";
         },
@@ -1093,7 +1093,7 @@
       processing: true,
       serverSide: true,
       ajax: {
-        url: "../assets/ajax/post.php",
+        url: "./assets/ajax/post.php",
         type: "post",
       },
       columns: [
