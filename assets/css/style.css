@@ -3415,7 +3415,6 @@ svg.f-light {
   border-color: #1C1B20 !important;
   color: #fff !important;
   background-color: #1C1B20 !important;
-  margin-bottom: 10px;
 }
 .filter-custom-btn{
   border: 1px solid #000;
@@ -27354,7 +27353,7 @@ p.data-attributes svg {
 .product-box {
   border-radius: 10px;
   overflow: hidden;
-  height: 280px;
+  height: 100%;
 }
 .product-box-height{
   height: 260px !important;
