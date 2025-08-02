@@ -203,33 +203,28 @@
           </div>
           <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12">
                 <div class="card shadow">
                   <div class="card-body">
                     <form class="row g-3 needs-validation custom-input" novalidate="">
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipname">Name</label>
-                        <input class="form-control" id="validationTooltipname" type="text" placeholder="Name" required="">
-                        <div class="valid-tooltip">Looks good!</div>
+                      <div class="col-md-6">
+                        <label class="form-label">Name<span class="text-danger">*</span></label>
+                        <input class="form-control" type="text" placeholder="Name">
                       </div>
                       <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipsequenc">Sequence</label>
-                        <input class="form-control" id="validationTooltipsequenc" type="number" placeholder="Sequence" required="">
-                        <div class="valid-tooltip">Looks good!</div>
+                        <label class="form-label">Sequence<span class="text-danger">*</span></label>
+                        <input class="form-control" type="number" placeholder="Sequence">
                       </div>
                       <div class="col-12"> 
-                        <label class="form-label" for="formFile">Choose File</label>
-                        <input class="form-control" id="formFile" type="file" required="">
+                        <label class="form-label">Choose File</label>
+                        <input class="form-control" type="file">
                       </div>
                       <div class="col-12 text-center">
                         <button class="btn btn-success-gradien" type="submit">Save</button>
+                        <button class="btn btn-danger-gradien" type="submit">Cancel</button>
                       </div>
                     </form>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
           <!-- Container-fluid Ends-->
         </div>
