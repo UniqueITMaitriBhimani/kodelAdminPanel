@@ -45,6 +45,8 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/select2.min.css">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
@@ -235,314 +237,149 @@
       </div>
       <!-- Page Sidebar Ends-->
       <div class="page-body">
-        <!-- Container-fluid starts-->
-        <div class="container-fluid basic_table">
-          <div class="row mt-100">
-            <div class="col-md-6">
-              <h3>Current Stock Overview</h3>
-            </div>
-            <div class="col-md-6">
-              <div class="feature-products">
-                <div class="common-f-start justify-content-md-end mb-3">
-                  <div class="job-filter me-2">
-                    <div class="faq-form">
-                      <input class="form-control border-dark" type="text" placeholder="Search.."><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-search search-icon">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                      </svg>
-                    </div>
-                  </div>
-                  <a class="btn btn-soft-info f-w-500" href="history-Stock-Management.html"><i
-                      class="fas fa-list-ul me-2"></i>History</a>
-                  <a class="btn btn-soft-teal f-w-500 ms-3" href="dummy.pdf" download title="Download PDF"><i
-                      class="fas fa-file-pdf text-teal me-2"></i>Export</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="card shadow">
-                <div class="table-responsive custom-scrollbar">
-                  <table class="table border-bottom-table">
-                    <thead>
-                      <tr class="border-bottom-primary">
-                        <th scope="col">No</th>
-                        <th scope="col">Item</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Total Available Product</th>
-                        <th scope="col">Rate</th>
-                        <th scope="col">Stock</th>
-                        <th scope="col">Last Modified</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>STYRISH LEATHER COLLECTION</td>
-                        <td>Steel Rod</td>
-                        <td>120</td>
-                        <td>$15.00</td>
-                        <td>
-                          <button type="button" class="btn btn-sm btn-soft-secondary" data-bs-toggle="modal"
-                            data-bs-target="#badgeModal">
-                            View Stocks
-                          </button>
-                        </td>
-                        <td>2025-07-16</td>
-                        <td>
-                          <a href="#" class="btn btn-sm btn-soft-success me-1" title="View" data-bs-toggle="modal"
-                            data-bs-target="#viewDetailsModal" data-bs-placement="top" data-bs-trigger="hover focus"
-                            data-bs-container="body">
-                            <i class="fas fa-eye"></i>
-                          </a>
-                        </td>
-
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>ECO SCODA COVENTRY</td>
-                        <td>Copper Wire</td>
-                        <td>350</td>
-                        <td>$7.25</td>
-                       <td>
-                          <button type="button" class="btn btn-sm btn-soft-secondary" data-bs-toggle="modal"
-                            data-bs-target="#badgeModal">
-                            View Items
-                          </button>
-                        </td>
-                        <td>2025-07-15</td>
-                        <td>
-                          <a href="#" class="btn btn-sm btn-soft-success me-1" title="View" data-bs-toggle="modal"
-                            data-bs-target="#viewDetailsModal" data-bs-placement="top" data-bs-trigger="hover focus"
-                            data-bs-container="body">
-                            <i class="fas fa-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>VOLVO VISENZA</td>
-                        <td>Plastic Pipe</td>
-                        <td>500</td>
-                        <td>$3.50</td>
-                       <td>
-                          <button type="button" class="btn btn-sm btn-soft-secondary" data-bs-toggle="modal"
-                            data-bs-target="#badgeModal">
-                            View Items
-                          </button>
-                        </td>
-                        <td>2025-07-14</td>
-                        <td>
-                          <a href="#" class="btn btn-sm btn-soft-success me-1" title="View" data-bs-toggle="modal"
-                            data-bs-target="#viewDetailsModal" data-bs-placement="top" data-bs-trigger="hover focus"
-                            data-bs-container="body">
-                            <i class="fas fa-eye"></i>
-                          </a>
-                        </td>
-
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="card height-equal shadow-sm">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div>
-                        <div class="btn-group">
-                          <button class="btn btn-primary rounded-pill dropdown-toggle" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">10</button>
-                          <ul class="dropdown-menu dropdown-block" style="">
-                            <li><a class="dropdown-item" href="#!">10</a></li>
-                            <li><a class="dropdown-item" href="#!">20</a></li>
-                            <li><a class="dropdown-item" href="#!">50</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination pagination-dark pagin-border-dark gap-2">
-                          <li class="page-item"><a class="page-link rounded-circle" href="#!"
-                              aria-label="Previous"><span aria-hidden="true">«</span><span
-                                class="sr-only">Previous</span></a></li>
-                          <li class="page-item"><a class="page-link rounded-circle" href="#!">1</a></li>
-                          <li class="page-item"><a class="page-link rounded-circle" href="#!">2</a></li>
-                          <li class="page-item"><a class="page-link rounded-circle" href="#!">...</a></li>
-                          <li class="page-item"><a class="page-link rounded-circle" href="#!">20</a></li>
-                          <li class="page-item"><a class="page-link rounded-circle" href="#!" aria-label="Next"><span
-                                aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Container-fluid Ends-->
-      </div>
-      <div class="modal fade" id="badgeModal" tabindex="-1" aria-labelledby="badgeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="badgeModalLabel">Items List</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-          <div class="modal-body">
-  <div class="table-responsive">
-    <table class="table table-bordered">
-      <thead class="table-light">
-        <tr>
-          <th>Rack</th>
-          <th>Column</th>
-          <th>Row</th>
-          <th class="text-center">Stock</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>gh-1</td>
-          <td>1</td>
-          <td>A</td>
-          <td class="text-center"> <div class="text-success fw-semibold">25 Rolls</div>
-                             <div class="text-success fw-semibold">30 Meters</div></td>
-        </tr>
-        <tr>
-          <td>gh-1</td>
-          <td>1</td>
-          <td>A</td>
-          <td class="text-center"> <div class="text-success fw-semibold">25 Rolls</div>
-                             <div class="text-success fw-semibold">30 Meters</div></td>
-        </tr>
-        <tr>
-          <td>gh-1</td>
-          <td>1</td>
-          <td>A</td>
-          <td class="text-center"> <div class="text-success fw-semibold">25 Rolls</div>
-                             <div class="text-success fw-semibold">30 Meters</div></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-          </div>
-        </div>
-      </div>
-      <!-- footer start-->
-      <footer class="footer">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 footer-copyright text-center">
-              <p class="mb-0 f-w-600">Copyright <span class="year-update"> </span> © By <a
-                  href="https://theuniqueitsolution.com/" class="text-dark text-decoration-none" target="_blank">The
-                  Unique IT Solution</a> </p>
+          <div class="page-title">
+            <div class="row">
+              <div class="col-sm-6">
+                <h3>Add Stock</h3>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+        <!-- Container-fluid starts-->
+        <div class="container-fluid">
+
+          <div class="col-sm-12">
+            <div class="card shadow">
+              <div class="card-body">
+                <form class="row g-3 needs-validation custom-input" novalidate="">
+
+                  <div class="col-md-12">
+                    <label class="form-label text-dark">Select Color </label>
+                    <select class="single-select">
+                      <option selected disabled value="">Choose...</option>
+                      <option value="ro">Rose Taupe</option>
+                      <option value="be"> Beige Sandstone</option>
+                      <option value="gr">Graphite Grey</option>
+                    </select>
+                  </div>
+                  <div class="col-md-8 mt-0">
+                    <div class="form-control-plaintext">
+                      Order's Roll: <strong>10</strong>, Order's Meter: <strong>45</strong>
+                    </div>
+                  </div>
+                  <div class="col-md-12 position-relative">
+                    <label class="form-label" for="validationTooltipcgst">Rack</label>
+                    <select class="single-select">
+                      <option selected disabled value="">Choose...</option>
+                      <option value="ro">Rose Taupe</option>
+                      <option value="be"> Beige Sandstone</option>
+                      <option value="gr">Graphite Grey</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 position-relative">
+                    <label class="form-label" for="validationTooltipSgst">Row</label>
+                    <select class="single-select">
+                      <option selected disabled value="">Choose...</option>
+                      <option value="ro">Rose Taupe</option>
+                      <option value="be"> Beige Sandstone</option>
+                      <option value="gr">Graphite Grey</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 position-relative">
+                    <label class="form-label" for="validationTooltipRow">Column</label>
+                    <select class="single-select">
+                      <option selected disabled value="">Choose...</option>
+                      <option value="ro">Rose Taupe</option>
+                      <option value="be"> Beige Sandstone</option>
+                      <option value="gr">Graphite Grey</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 position-relative">
+                    <label class="form-label" for="validationTooltipbox">Meter</label>
+                    <input class="form-control" id="validationTooltipbox" type="number" required="">
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                  <div class="col-md-4 position-relative">
+                    <label class="form-label" for="validationTooltipQuantityMtr">Roll</label>
+                    <input class="form-control" id="validationTooltipQuantityMtr" type="number" required="">
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+
+                  <div class="col-md-4   d-flex justify-content-center align-items-end">
+                    <button class="btn btn-primary" type="submit">Add</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-sm-12 px-2 mt-3">
+                <div class="card shadow">
+                  <div class="table-responsive custom-scrollbar">
+                    <table class="table border-bottom-table">
+                      <thead>
+                        <tr class="border-bottom-primary">
+                          <th scope="col">No</th>
+                          <th scope="col">Color Name</th>
+                          <th scope="col">Rack</th>
+                          <th scope="col">Column</th>
+                          <th scope="col">Row</th>
+                          <th scope="col">Action <small>(Remove)</small></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Kerol ShieldPro</td>
+                          <td>gh-1</td>
+                          <td>2</td>
+                          <td>A</td>
+                          <td>
+                            <a href="#" class="btn btn-sm btn-soft-danger deleteItem me-1" data-bs-toggle="tooltip"
+                              title="Delete">
+                              <i class="fas fa-trash-alt"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-12 text-center mb-3">
+                  <button class="btn btn-success-gradien" type="submit">Save</button>
+                  <button class="btn btn-danger-gradien" type="submit">Cancel</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- Container-fluid Ends-->
     </div>
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="viewDetailsModal" tabindex="-1" aria-labelledby="viewDetailsModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header d-flex justify-content-between">
-          <div>
-            <h5 class="modal-title" id="viewDetailsModalLabel">Item Details for <b>101 / Red of item 1</b></h5>
+    <!-- footer start-->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 footer-copyright text-center">
+            <p class="mb-0 f-w-600">Copyright <span class="year-update"> </span> © By <a
+                href="https://theuniqueitsolution.com/" class="text-dark text-decoration-none" target="_blank">The
+                Unique IT Solution</a> </p>
           </div>
-          <div>
-            <span class="fw-bold">100 roll × 50 mtr</span>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="modal-body">
-
-          <!-- Transaction Cards -->
-          <div class="row">
-            <!-- Transaction 1 -->
-            <div class="col-12">
-              <div class="card transaction-card out">
-                <div class="card-body py-3">
-                  <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                      <p class="mb-1 fw-semibold">INV-789456</p>
-                      <p class="mb-1 text-muted-custom">10 roll</p>
-                      <p class="mb-0 text-muted-custom">₹450.00 / Roll</p>
-                    </div>
-                    <div class="text-end">
-                      <p class="mb-2 text-muted-custom">18 July 2025</p>
-                      <span class="badge bg-danger badge-custom">Out</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Transaction 2 -->
-            <div class="col-12">
-              <div class="card transaction-card in">
-                <div class="card-body py-3">
-                  <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                      <p class="mb-1 fw-semibold">INV-789456</p>
-                      <p class="mb-1 text-muted-custom">10 roll</p>
-                      <p class="mb-0 text-muted-custom">₹450.00 / Roll</p>
-                    </div>
-                    <div class="text-end">
-                      <p class="mb-2 text-muted-custom">18 July 2025</p>
-                      <span class="badge bg-success badge-custom">In</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Transaction 3 (Example) -->
-            <div class="col-12">
-              <div class="card transaction-card out">
-                <div class="card-body py-3">
-                  <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                      <p class="mb-1 fw-semibold">INV-789457</p>
-                      <p class="mb-1 text-muted-custom">5 roll</p>
-                      <p class="mb-0 text-muted-custom">₹450.00 / Roll</p>
-                    </div>
-                    <div class="text-end">
-                      <p class="mb-2 text-muted-custom">17 July 2025</p>
-                      <span class="badge bg-danger badge-custom">Out</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
+    </footer>
   </div>
+  </div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-        new bootstrap.Tooltip(tooltipTriggerEl);
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     });
   </script>
-
 
   <!-- latest jquery-->
   <script src="./assets/js/jquery.min.js"></script>
@@ -571,6 +408,8 @@
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/script1.js"></script>
   <script src="./assets/js/theme-customizer/customizer.js"></script>
+  <script src="./assets/js/select2.full.min.js"></script>
+  <script src="./assets/js/select2-init.js"></script>
 </body>
 
 </html>

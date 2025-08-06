@@ -9,7 +9,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/images/logo/favicon.png" type="image/x-icon">
-    <title>Form Validation | Paris - Premium Admin Template By Pixelstrap</title>
+    <title>Basic Tables | Paris - Premium Admin Template By Pixelstrap</title>
     <!-- Google font-->
     <link href="../../css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
 
@@ -30,7 +30,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/animate.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
@@ -42,11 +41,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/dev-style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="./assets/css/select2.min.css">
-    
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors/sweetalert2.css">
   </head>
-  <body> 
+  <body>
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends--> 
     <!-- loader starts-->
     <div class="loader-wrapper">
       <div class="theme-loader"> 
@@ -61,9 +62,6 @@
       </div>
     </div>
     <!-- loader ends-->
-    <!-- tap on top starts-->
-    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
-    <!-- tap on tap ends-->
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page Header Start-->
@@ -135,7 +133,7 @@
               </div>
             </div>
             <div class="logo-icon-wrapper"><a href="index.html"><img class="for-light" width="30" src="./assets/images/logo/favicon.png" alt=""><img class="img-fluid for-dark" src="./assets/images/logo/logo-icon-dark.png" alt=""></a></div>
-            <nav class="sidebar-main">
+             <nav class="sidebar-main">
               <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
               <div id="sidebar-menu">
                 <ul class="sidebar-links" id="simple-bar">
@@ -194,177 +192,93 @@
         </div>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
-          <div class="container-fluid">
-            <div class="page-title">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h3>Add New Purchase Bill</h3>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="card shadow">
-                  <div class="card-body">
-                    <form class="row g-3 needs-validation custom-input" novalidate="">
-                      <div class="col-md-6">
-                          <label class="form-label text-dark">Select Vendor </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="ac">Acme Corp</option>
-                            <option value="ev">EVERGREEN LEATHER</option>
-                            <option value="lu">LUXURIUS COLLECTION</option>
-                            <option value="ma">MAGNUM COLLECTION</option>
-                            <option value="ne">NEXA LEATHER</option>
-                            <option value="sty">STYRISH LEATHER COLLECTION</option>
-                            <option value="vo">VOLVO VISENZA</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipContact">Contact No</label>
-                        <input class="form-control" id="validationTooltipContact" type="text"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipGST">GST</label>
-                        <input class="form-control" id="validationTooltipGST" type="text"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipcolorname">Purchase Bill</label>
-                        <input class="form-control digits" type="date" value="2018-01-15">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-12 position-relative">
-                        <label class="form-label" for="validationTooltipPurchaseBillNumber">Purchase Bill Number</label>
-                        <input class="form-control" id="validationTooltipPurchaseBillNumber" type="text"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                     <div class="col-12"> 
-                        <label class="form-label" for="formFile">Bill Doc</label>
-                        <input class="form-control" id="formFile" type="file" required="">
-                      </div>
-                    </form>
-                  </div>
-                </div>
+          <div class="container-fluid basic_table">
+            <div class="row mt-100">
+               <div class="col-md-6">
+                <h3>Location Management</h3>
+               </div>
+               <div class="col-md-6">
+                 <div class="feature-products">
+                <div class="common-f-start justify-content-md-end mb-3"><div class="job-filter me-2">
+                    <div class="faq-form">
+                     <input class="form-control border-dark" type="text" placeholder="Search.."><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                  </div><a class="btn btn-primary f-w-500" href="location-add.html"><i class="fa fa-plus pe-2"></i>Add Location</a></div>
               </div>
+               </div>
               <div class="col-sm-12">
-                <h5 class="mb-2">Select Color</h5>
-                <div class="card shadow">
-                  <div class="card-body">
-                    <form class="row g-3 needs-validation custom-input" novalidate="">
-                       <div class="col-md-6">
-                          <label class="form-label text-dark">Select Item </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="ec">ECO SCODA COVENTRY</option>
-                            <option value="ev">EVERGREEN LEATHER</option>
-                            <option value="lu">LUXURIUS COLLECTION</option>
-                            <option value="ma">MAGNUM COLLECTION</option>
-                            <option value="ne">NEXA LEATHER</option>
-                            <option value="sty">STYRISH LEATHER COLLECTION</option>
-                            <option value="vo">VOLVO VISENZA</option>
-                          </select>
-                      </div>
-                       <div class="col-md-6">
-                          <label class="form-label text-dark">Select Color </label>
-                          <select class="single-select">
-                            <option selected disabled value="">Choose...</option>
-                            <option value="ro">Rose Taupe</option>
-                            <option value="be">	Beige Sandstone</option>
-                            <option value="gr">Graphite Grey</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipcProductWithoutTaxMtr">Product Without Tax / Mtr</label>
-                        <input class="form-control" id="validationTooltipcProductWithoutTaxMtr" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative mt-0">
-                        <label class="form-label" for="validationTooltipcProductWithoutTaxRoll">Product Without Tax / Roll</label>
-                        <input class="form-control" id="validationTooltipcProductWithoutTaxRoll" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipcgst">CGST</label>
-                        <input class="form-control" id="validationTooltipcgst" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-6 position-relative">
-                        <label class="form-label" for="validationTooltipSgst">SGST</label>
-                        <input class="form-control" id="validationTooltipSgst" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                   
-                      <div class="col-md-5 position-relative">
-                        <label class="form-label" for="validationTooltipQuantityMtr">Quantity / Mtr</label>
-                        <input class="form-control" id="validationTooltipQuantityMtr" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-5 position-relative">
-                        <label class="form-label" for="validationTooltipQuantityRoll">Quantity / Roll</label>
-                        <input class="form-control" id="validationTooltipQuantityRoll" type="number"  required="">
-                        <div class="valid-tooltip">Looks good!</div>
-                      </div>
-                      <div class="col-md-2   d-flex justify-content-center align-items-end">
-                        <button class="btn btn-primary" type="submit">Add</button>
-                      </div>
-                    </form>
-                  </div>
-                  
-                    <div class="col-sm-12 px-2 mt-3">
                 <div class="card shadow">
                   <div class="table-responsive custom-scrollbar">
                     <table class="table border-bottom-table">
                       <thead>
                         <tr class="border-bottom-primary">
                           <th scope="col">No</th>
-                          <th scope="col">Color Name</th>
-                          <th scope="col">SGST</th>
-                          <th scope="col">CGST</th>
-                          <th scope="col">Product Without Tax / Mtr</th>
-                          <th scope="col">Product Without Tax / Roll</th>
-                          <th scope="col">Quantity / Roll</th>
-                          <th scope="col">Quantity / Mrt</th>
-                          <th scope="col">Action <small>(Remove)</small></th>
+                          <th scope="col">Rack</th>
+                          <th scope="col">Total Columns</th>
+                          <th scope="col">Total Row</th>
+                          <th scope="col">Action</th>
                         </tr>
                       </thead>
                       <tbody>
-                         <tr>
-                          <td>1</td>
-                          <td>Kerol ShieldPro</td>
-                          <td>9%</td>
-                          <td>9%</td>
-                          <td>₹120.00</td>
-                          <td>₹2400.00</td>
-                          <td>20 Roll</td>
-                          <td>200 Mtr</td>
-                          <td>
-                            <a href="#" 
-                               class="btn btn-sm btn-soft-danger deleteItem me-1" 
-                               data-bs-toggle="tooltip" 
-                               title="Delete">
-                              <i class="fas fa-trash-alt"></i>
-                            </a>
+                        <tr>
+                           <th scope="row">1</th>
+                           <td>gh-1</td>
+                              <td>10</span>
                           </td>
-                        </tr>
+                           <td>3</td>
+                        
+                           <!-- Actions -->
+                           <td>
+                             <a href="location-add.html" class="btn btn-sm btn-soft-primary me-1" title="Add">
+                                  <i class="fas fa-pen"></i>
+                                </a>
+                              <a class="btn btn-sm btn-soft-danger deleteItem" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Color">
+                                <i class="fas fa-trash"></i>
+                              </a>
+                            </td>
+
+
+                         </tr>
+                     
                       </tbody>
                     </table>
                   </div>
                 </div>
-                <div class="col-md-12 text-center mb-3">
-                  <a class="btn btn-success-gradien" href="locationset.html" type="submit">Next</a>
-                  <button class="btn btn-danger-gradien" type="submit">Save</button>
+              </div>
+              <div class="col-md-12">
+                <div class="card height-equal shadow-sm">
+                  <div class="card-body">
+                    <div class="row">
+                    <div class="col-md-6">
+                      <div>
+                           <div class="btn-group">
+                        <button class="btn btn-primary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">10</button>
+                        <ul class="dropdown-menu dropdown-block" style="">
+                          <li><a class="dropdown-item" href="#!">10</a></li>
+                          <li><a class="dropdown-item" href="#!">20</a></li>
+                          <li><a class="dropdown-item" href="#!">50</a></li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                      <nav aria-label="Page navigation example">
+                      <ul class="pagination pagination-dark pagin-border-dark gap-2">
+                        <li class="page-item"><a class="page-link rounded-circle" href="#!" aria-label="Previous"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+                        <li class="page-item"><a class="page-link rounded-circle" href="#!">1</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle" href="#!">2</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle" href="#!">...</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle" href="#!">20</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle" href="#!" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+                      </ul>
+                    </nav>
+                    </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-                </div>
-                
-              </div>  
             </div>
-            
           </div>
           <!-- Container-fluid Ends-->
         </div>
@@ -380,16 +294,42 @@
         </footer>
       </div>
     </div>
-
     <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl);
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
     });
   });
 </script>
 
+         <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const deleteLinks = document.querySelectorAll('.deleteItem');
+
+    deleteLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#16c7f9',
+          cancelButtonColor: '#fc4438',
+          confirmButtonText: 'Yes, delete it!',
+          cancelButtonText: 'Cancel'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // You can add your delete logic here
+            Swal.fire('Deleted!', 'Your item has been deleted.', 'success');
+          }
+        });
+      });
+    });
+  });
+</script>
     <!-- latest jquery-->
     <script src="./assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->
@@ -408,16 +348,12 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <script src="./assets/js/slick/slick.js"></script>
     <script src="./assets/js/header-slick.js"></script>
-    <script src="./assets/js/form-validation-custom.js"></script>
-    <script src="./assets/js/height-equal.js"></script>
-    <script src="./assets/js/custom-animated-form.js"></script>
-    <script src="./assets/js/custom-pwd-validation.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/script1.js"></script>
     <script src="./assets/js/theme-customizer/customizer.js"></script>
-     <script src="./assets/js/select2.full.min.js"></script>
-    <script src="./assets/js/select2-init.js"></script>
+    <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
